@@ -5,10 +5,6 @@ description: The Kick OAuth Flow.
 
 # OAuth 2.1
 
-* Authorization
-* Token
-* Token Refresh
-
 ## Token Types
 
 There are 2 types of tokens that are available for the Kick Dev API: App Access Token and User Access Token. Each token has a unique OAuth flow to generate the token and are generally used in different scenarios.
