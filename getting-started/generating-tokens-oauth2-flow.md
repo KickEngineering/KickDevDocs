@@ -233,10 +233,10 @@ Pass in a token to revoke access to that token.
 
 **Query**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `token` | string | The token to be revoked |
-| `token_hint_type` | string | `access_token or refresh_token` |
+| Name | Required | Type | Description |
+|------|----------|------|-------------|
+| `token` | Yes | string | The token to be revoked |
+| `token_hint_type` | Yes | string | `access_token or refresh_token` |
 
 **Response**
 
