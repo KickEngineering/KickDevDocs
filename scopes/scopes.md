@@ -8,4 +8,10 @@ Scopes enable an app to request a level of access to Kick and define the specifi
 
 These scopes are for apps using OAuth 2.1 authorization code grants for authorization. The title is displayed to the user on the consent screen during the authorization flow.
 
-<table><thead><tr><th width="266">Scope</th><th>Summary</th><th>Description</th></tr></thead><tbody><tr><td><code>user:read</code></td><td>Read user info</td><td>View user information in Kick including username, StreamerID, etc.</td></tr><tr><td><code>channel:read</code></td><td>Read channel info</td><td>View channel information in Kick including Channel description, category, etc</td></tr><tr><td><code>channel:write</code></td><td>Update channel info</td><td>Update livestream metadata for a channel based on the channel ID.</td></tr><tr><td><code>streamkey:read</code></td><td>Read streamkey</td><td>Read a user's StreamURL and Stream key</td></tr><tr><td><code>events:subscribe</code></td><td>Subscribe to events</td><td>Subscribe to all channel events like chat messages, follows, subscribe and gifts on Kick</td></tr></tbody></table>
+| Scope | Summary | Description |
+|-------|---------|-------------|
+| `user:read` | Read user info | View user information in Kick including username, StreamerID, etc. |
+| `channel:read` | Read channel info | View channel information in Kick including Channel description, category, etc |
+| `channel:write` | Update channel info | Update livestream metadata for a channel based on the channel ID. |
+| `streamkey:read` | Read streamkey | Read a user's StreamURL and Stream key |
+| `events:subscribe` | Subscribe to events | Subscribe to all channel events like chat messages, follows, subscribe and gifts on Kick |

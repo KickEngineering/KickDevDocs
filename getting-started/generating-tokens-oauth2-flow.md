@@ -15,7 +15,7 @@ App Access Tokens are generated through the Client Credentials flow. These serve
 
 ### User Access Token
 
-User Access Tokens are generated through the Authorization Grant Flow. These token give an application access to the users information based on the scopes the App has requested. This give more privileged information and access to an App and will often allow an App to act on the users behalf.
+User Access Tokens are generated through the Authorization Grant Flow. These tokens give an application access to the users information based on the scopes the App has requested. This gives more privileged information and access to an App and will often allow an App to act on the users behalf.
 
 ## Kick OAuth Server
 
@@ -39,7 +39,16 @@ Directs the user to the authorization server where they can log in and approve t
 
 **Query Parameters**
 
-<table><thead><tr><th width="276">Name</th><th width="128">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>client_id</code></td><td>string</td><td>Your application's client id</td></tr><tr><td><code>response_type</code></td><td>string</td><td><code>code</code></td></tr><tr><td><code>redirect_url</code></td><td>uri</td><td>The URI to redirect users to after authorization</td></tr><tr><td><code>state</code></td><td>string</td><td>A random string to maintain state between the request and callback</td></tr><tr><td><code>scope</code></td><td>string</td><td>Scopes for request</td></tr><tr><td><code>code_challenge</code></td><td>string </td><td>OAuth code challenge</td></tr><tr><td><code>code_challenge_method</code></td><td>string</td><td><code>S256</code></td></tr></tbody></table>
+
+| Name | Required | Type | Description |
+|------|----------|------|-------------|
+| `client_id` | Yes | string | Your application's client id |
+| `response_type` | Yes | string | `code` |
+| `redirect_uri` | Yes | uri | The URI to redirect users to after authorization |
+| `state` | Yes | string | A random string to maintain state between the request and callback |
+| `scope` | Yes (at the moment) | string | Scopes for request |
+| `code_challenge` | Yes | string | OAuth code challenge |
+| `code_challenge_method` | Yes | string | `S256` |
 
 **Response**
 
@@ -87,11 +96,18 @@ https://yourapp.com/callback?code=<code>&state=random-state
 
 <mark style="color:green;">`POST`</mark> `/oauth/token`
 
-Exchanges the code for a valid access token and a refresh token that can be used to make authorised requests to Kick’s API.
+Exchanges the code for a valid access token and a refresh token that can be used to make authorised requests to Kick's API.
 
 **Body**
 
-<table><thead><tr><th width="244">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>code</code></td><td>string</td><td>Code received during the Authorization Flow</td></tr><tr><td><code>client_id</code></td><td>string</td><td>Your application's client id</td></tr><tr><td><code>client_secret</code></td><td>string</td><td>You application's client secret</td></tr><tr><td><code>redirect_uri</code></td><td>string </td><td>The URI to redirect users to after authorization</td></tr><tr><td><code>grant_type</code></td><td>string</td><td><code>authorization_code</code></td></tr><tr><td><code>code_verifier</code></td><td>string</td><td>To verify PKCE challenge code created</td></tr></tbody></table>
+| Name | Required | Type | Description |
+|------|----------|------|-------------|
+| `code` | Yes | string | Code received during the Authorization Flow |
+| `client_id` | Yes | string | Your application's client id |
+| `client_secret` | Yes | string | You application's client secret |
+| `redirect_uri` | Yes | string | The URI to redirect users to after authorization |
+| `grant_type` | Yes | string | `authorization_code` |
+| `code_verifier` | Yes | string | To verify PKCE challenge code created |
 
 **Response**
 
@@ -153,7 +169,12 @@ Pass in refresh token and refresh both access and refresh codes.
 
 **Body**
 
-<table><thead><tr><th width="244">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>refresh_token</code></td><td>string</td><td>Code received during the Authorization Flow</td></tr><tr><td><code>client_id</code></td><td>string</td><td>Your application's client id</td></tr><tr><td><code>client_secret</code></td><td>string</td><td>You application's client secret</td></tr><tr><td><code>grant_type</code></td><td>string</td><td><code>refresh_token</code></td></tr></tbody></table>
+| Name | Required |  Type | Description |
+|------|----------|------|-------------|
+| `refresh_token` | Yes | string | Code received during the Authorization Flow |
+| `client_id` | Yes | string | Your application's client id |
+| `client_secret` | Yes | string | You application's client secret |
+| `grant_type` | Yes | string | `refresh_token` |
 
 **Response**
 
@@ -188,7 +209,7 @@ Request Form Body:
 {
     grant_type=refresh_token
     client_id=<client_id>
-    client_secret=<client_secret>r>
+    client_secret=<client_secret>
     refresh_token=<refresh_token>
 }
 ```
@@ -212,7 +233,10 @@ Pass in a token to revoke access to that token.
 
 **Query**
 
-<table><thead><tr><th width="244">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code></td><td>string</td><td>The token to be revoked</td></tr><tr><td><code>token_hint_type</code></td><td>string</td><td><code>access_token or refresh_token</code></td></tr></tbody></table>
+| Name | Type | Description |
+|------|------|-------------|
+| `token` | string | The token to be revoked |
+| `token_hint_type` | string | `access_token or refresh_token` |
 
 **Response**
 
@@ -234,12 +258,12 @@ OK
 
 ```
 POST 
-https://kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
+https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
 ```
-
 #### Example Response
 
 ```
 OK
 ```
+
 

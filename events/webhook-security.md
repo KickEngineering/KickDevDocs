@@ -8,7 +8,13 @@ Both App and User access tokens can access this at the moment.
 
 ## Headers
 
-<table><thead><tr><th width="302">Header</th><th width="200">Type</th><th>Short Description</th></tr></thead><tbody><tr><td>Kick-Event-Message-Id</td><td>ULID</td><td>Unique message id, idempotent key.</td></tr><tr><td>Kick-Event-Signature</td><td>Base64 Encode String</td><td>Signature to verify the sender</td></tr><tr><td>Kick-Event-Message-Timestamp</td><td>RFC3339 Date-time</td><td>Timestamp of when the message was sent</td></tr><tr><td>Kick-Event-Type</td><td>string</td><td>Eg. channel:write</td></tr><tr><td>Kick-Event-Version</td><td>string</td><td>Eg. 1</td></tr></tbody></table>
+| Header | Type | Short Description |
+|--------|------|------------------|
+| Kick-Event-Message-Id | ULID | Unique message id, idempotent key. |
+| Kick-Event-Signature | Base64 Encode String | Signature to verify the sender |
+| Kick-Event-Message-Timestamp | RFC3339 Date-time | Timestamp of when the message was sent |
+| Kick-Event-Type | string | Eg. channel:write |
+| Kick-Event-Version | string | Eg. 1 |
 
 ## Webhook Sender Validation
 
