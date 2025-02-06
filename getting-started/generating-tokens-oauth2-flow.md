@@ -45,8 +45,8 @@ Directs the user to the authorization server where they can log in and approve t
 | `client_id` | Yes | string | Your application's client id |
 | `response_type` | Yes | string | `code` |
 | `redirect_uri` | Yes | uri | The URI to redirect users to after authorization |
-| `state` | Yes | string | A random string to maintain state between the request and callback |
-| `scope` | Yes (at the moment) | string | Scopes for request |
+| `state` | Yes (at the moment) | string | A random string to maintain state between the request and callback |
+| `scope` | Yes | string | Scopes for request |
 | `code_challenge` | Yes | string | OAuth code challenge |
 | `code_challenge_method` | Yes | string | `S256` |
 
