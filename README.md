@@ -36,7 +36,7 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 
 ### Feedback
 
-Following many other open source projects, we will use Github as our central point of feedback, bug reports and feature requests for the API. All this documentation is stored within a repository which we will make publicly accessible, to allow the community to contribute to the project. We might even look at publishing a public road map there, but we are at that stage yet.
+Following many other open source projects, we will use Github as our central point of feedback, bug reports and feature requests for the API. All this documentation is stored within a repository which we will make publicly accessible, to allow the community to contribute to the project. We might even look at publishing a public road map there, but we aren't at that stage yet.
 
 #### Short term feedback
 
@@ -52,4 +52,15 @@ Although we will be extremely active on the Github Issues on the documentation r
 
 :red\_circle: - Not yet implemented
 
-<table><thead><tr><th width="266">Feature</th><th>Implemented</th><th>Status</th></tr></thead><tbody><tr><td>GET /users</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e2">🟢</span></td><td>Stable</td></tr><tr><td>GET /channels</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e0">🟠</span></td><td>Subject to change. Moving the query parameter from streamer_id to broadcaster_user_id</td></tr><tr><td>PATCH /channels</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e2">🟢</span></td><td>Stable</td></tr><tr><td>GET /categories/category_id</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e2">🟢</span></td><td>Stable</td></tr><tr><td>GET /categories</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e2">🟢</span></td><td>Stable</td></tr><tr><td>POST /chat</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f535">🔵</span></td><td>In progress</td></tr><tr><td>App Bots</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f535">🔵</span></td><td>In progress</td></tr><tr><td>App Access Token</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f535">🔵</span></td><td>In Progress</td></tr><tr><td>Webhook Event-Signature</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f535">🔵</span></td><td>In Progress</td></tr><tr><td>Webhook Event Structure</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f7e0">🟠</span></td><td>Will remove Channel ID from all events</td></tr></tbody></table>
+| Feature | Implemented | Status |
+|---------|------------|---------|
+| GET /users | 🟢 | Stable |
+| GET /channels | 🟠 | Subject to change. Moving the query parameter from streamer_id to broadcaster_user_id |
+| PATCH /channels | 🟢 | Stable |
+| GET /categories/category_id | 🟢 | Stable |
+| GET /categories | 🟢 | Stable |
+| POST /chat | 🔵 | In progress |
+| App Bots | 🔵 | In progress |
+| App Access Token | 🔵 | In Progress |
+| Webhook Event-Signature | 🔵 | In Progress |
+| Webhook Event Structure | 🟠 | Will remove Channel ID from all events |
