@@ -15,7 +15,7 @@ App Access Tokens are generated through the Client Credentials flow. These serve
 
 ### User Access Token
 
-User Access Tokens are generated through the Authorization Grant Flow. These tokens give an application access to the users information based on the scopes the App has requested. This gives more privileged information and access to an App and will often allow an App to act on the users behalf.
+User Access Tokens are generated through the Authorization Grant flow. These tokens give an application access to the user's information based on the scopes the App has requested. This gives more privileged information and access to an App and will often allow an App to act on the user's behalf.
 
 ## Kick OAuth Server
 
@@ -256,4 +256,3 @@ https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
 ```
 OK
 ```
-

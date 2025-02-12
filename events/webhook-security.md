@@ -10,21 +10,21 @@ App Access Tokens and User Access Tokens can access this.
 
 | Header                       | Type                 | Short Description                      |
 | ---------------------------- | -------------------- | -------------------------------------- |
-| Kick-Event-Message-Id        | ULID                 | Unique message id, idempotent key.     |
+| Kick-Event-Message-Id        | ULID                 | Unique message ID, idempotent key      |
 | Kick-Event-Signature         | Base64 Encode String | Signature to verify the sender         |
 | Kick-Event-Message-Timestamp | RFC3339 Date-time    | Timestamp of when the message was sent |
-| Kick-Event-Type              | string               | Eg. channel:write                      |
-| Kick-Event-Version           | string               | Eg. 1                                  |
+| Kick-Event-Type              | string               | e.g. channel:write                     |
+| Kick-Event-Version           | string               | e.g. 1                                 |
 
 ## Webhook Sender Validation
 
 _Please Note! This currently isn't working as intended and is in the process of being fixed._
 
-Kick-Event-Message-Signature header is used to validate if a request has come from the Kick servers. This is to prevent anyone that found an apps webhook endpoint from sending fake events.
+Kick-Event-Message-Signature header is used to validate if a request has come from the Kick servers. This is to prevent anyone who finds an app's webhook endpoint from sending fake events.
 
 ### Kick Public Key
 
-This is the Kick public key. Any request that is sent from our servers will be have a signature signed by our Private Key, which can be decrypted using this Public Key.
+This is the Kick public key. Any request that is sent from our servers will have a signature signed by our Private Key, which can be decrypted using this Public Key.
 
 ```
 -----BEGIN PUBLIC KEY-----
@@ -140,6 +140,6 @@ Kick will attempt to send a webhook 3 times over a period of time until a 200 re
 
 ## Disabling of webhooks
 
-After a certain thresholds of errors received from an apps webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.
+After a certain threshold of errors are received from an app's webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.
 
-The app would then need to resubscribe to webhooks.
+The app will then need to resubscribe to webhooks.
