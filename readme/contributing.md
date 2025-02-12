@@ -6,7 +6,7 @@ description: How to make a contribution to the Kick Dev ecosystem
 
 If you've made it here, thank you for wanting to contribute to our project!
 
-We want the feedback process to be easy and streamlined. We have setup a single source of truth for feedback through our public GitHub documentation repository. This repository directly feeds back to our documentation website which allows you to edit and give feedback on the documentation and therefore the API.
+We want the feedback process to be easy and streamlined. We have setup a single source of truth for feedback through our [public GitHub documentation repository](https://github.com/KickEngineering/KickDevDocs). This repository directly feeds back to this documentation website which allows you to edit and give feedback on the documentation and therefore the API.
 
 Help us create and improve this product! We want your input and we want your feedback!
 
