@@ -46,7 +46,7 @@ While we’ll be very active on GitHub Issues, we also welcome quick feedback an
 
 We're rapidly building a world-class Public API with the following table highlighting the current status of various features available to developers.
 
-Our goals during this phase is to get feedback and iterate quickly. We want to create a well-crafted, stable API that works together seamlessly which means we will be continually improving the API over the closed beta period based on your feedback.
+Our goals during this phase is to get feedback and iterate quickly. We want to create a well-crafted, stable API that works together seamlessly which means we will be continually improving the API. We will keep you up-to-date with what we are cooking.
 
 ### Our Pipeline Currently
 
@@ -69,10 +69,11 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 | GET /categories                     | 🟢               | Stable              |
 | POST /chat                          | 🟡               | New                 |
 | POST /token/introspect              | 🟡               | New                 |
-| App Bots                            | 🔵               | In progress         |
+| App Bots                            | 🟡               | New                 |
 | App Access Token                    | 🔴               | Not yet implemented |
 | Webhook Event-Signature             | 🟢               | Stable              |
 | Webhook Event Structure             | 🟢               | Stable              |
-| Optional Scopes                     | 🔴               | Not yet implemented |
-| Chat bot badge                      | 🔵               | In progress         |
-| Granular scope OAuth consent screen | 🔵               | In progress         |
+| Optional Scopes                     | 🟡               | New                 |
+| Chat bot badge                      | 🟡               | New                 |
+| Granular scope OAuth consent screen | 🟡               | New                 |
+| GET /public-key                     | 🔴               | Not yet implemented |

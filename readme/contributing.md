@@ -19,6 +19,7 @@ We are looking for the following:
 * Bug reports
 * Feature requests
 * Endpoint requests
+* OpenAPI endpoint documentation issues
 
 ## Discord
 
