@@ -13,6 +13,7 @@
 * [Categories](apis/categories.md)
 * [Users](apis/users.md)
 * [Channels](apis/channels.md)
+* [Chat](apis/chat.md)
 
 ## Events
 

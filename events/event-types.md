@@ -93,7 +93,7 @@ Headers
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "subscriber_channel"
   },
-  "duration": 3.
+  "duration": 3,
   "created_at": "2025-01-14T16:08:06Z"
 }
 ```
@@ -182,7 +182,7 @@ Headers
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "subscriber_channel"
   },
-  "duration": 1.
+  "duration": 1,
   "created_at": "2025-01-14T16:08:06Z"
 }
 ```
