@@ -26,7 +26,7 @@ Information from creating an App will be required in these endpoints. Checkout t
 {% hint style="info" %}
 The host URL for our OAuth server is different from our API server.
 
-The Host URL is: _https://id.kick.com_
+The host URL is: _https://id.kick.com_
 {% endhint %}
 
 ## Authorization Endpoint
@@ -39,7 +39,7 @@ Directs the user to the authorization server where they can log in and approve t
 
 | Name                    | Required            | Type   | Description                                                        |
 | ----------------------- | ------------------- | ------ | ------------------------------------------------------------------ |
-| `client_id`             | Yes                 | string | Your application's client id                                       |
+| `client_id`             | Yes                 | string | Your application's client ID                                       |
 | `response_type`         | Yes                 | string | `code`                                                             |
 | `redirect_uri`          | Yes                 | uri    | The URI to redirect users to after authorization                   |
 | `state`                 | Yes (at the moment) | string | A random string to maintain state between the request and callback |
@@ -98,8 +98,8 @@ Exchanges the code for a valid access token and a refresh token that can be used
 | Name            | Required | Type   | Description                                      |
 | --------------- | -------- | ------ | ------------------------------------------------ |
 | `code`          | Yes      | string | Code received during the Authorization Flow      |
-| `client_id`     | Yes      | string | Your application's client id                     |
-| `client_secret` | Yes      | string | You application's client secret                  |
+| `client_id`     | Yes      | string | Your application's client ID                     |
+| `client_secret` | Yes      | string | Your application's client secret                 |
 | `redirect_uri`  | Yes      | string | The URI to redirect users to after authorization |
 | `grant_type`    | Yes      | string | `authorization_code`                             |
 | `code_verifier` | Yes      | string | To verify PKCE challenge code created            |
@@ -135,9 +135,9 @@ https://id.kick.com/oauth/token
 Request Form Body:
 {
     grant_type=authorization_code
-    client_id=&#x3C;Client_id>
-    client_secret=&#x3C;Client_secret>
-    redirect_uri=&#x3C;Redirect_uri>
+    client_id=&#x3C;client_id>
+    client_secret=&#x3C;client_secret>
+    redirect_uri=&#x3C;redirect_uri>
 <strong>    code_verifier=&#x3C;code_verifier>
 </strong>    code=&#x3C;CODE>
 }
@@ -165,8 +165,8 @@ Pass in refresh token and refresh both access and refresh codes.
 | Name            | Required | Type   | Description                                 |
 | --------------- | -------- | ------ | ------------------------------------------- |
 | `refresh_token` | Yes      | string | Code received during the Authorization Flow |
-| `client_id`     | Yes      | string | Your application's client id                |
-| `client_secret` | Yes      | string | You application's client secret             |
+| `client_id`     | Yes      | string | Your application's client ID                |
+| `client_secret` | Yes      | string | Your application's client secret            |
 | `grant_type`    | Yes      | string | `refresh_token`                             |
 
 **Response**
@@ -226,7 +226,10 @@ Pass in a token to revoke access to that token.
 
 **Query**
 
-<table><thead><tr><th width="205">Name</th><th>Required</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>token</code></td><td>Yes</td><td>string</td><td>The token to be revoked</td></tr><tr><td><code>token_hint_type</code></td><td>No</td><td>string</td><td><code>access_token or refresh_token</code></td></tr></tbody></table>
+| Name              | Required | Type   | Description                       |
+|-------------------|----------|--------|-----------------------------------|
+| `token`           | Yes      | string | The token to be revoked           |
+| `token_hint_type` | No       | string | `access_token` or `refresh token` |
 
 **Response**
 
