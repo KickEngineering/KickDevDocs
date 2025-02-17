@@ -20,7 +20,7 @@ App Access Tokens and User Access Tokens can access this.
 
 _Please Note! This currently isn't working as intended and is in the process of being fixed._
 
-`Kick-Event-Message-Signature` header is used to validate if a request has come from the Kick servers. This is to prevent anyone who finds an app's webhook endpoint from sending fake events.
+`Kick-Event-Signature` header is used to validate if a request has come from the Kick servers. This is to prevent anyone who finds an app's webhook endpoint from sending fake events.
 
 ### Kick Public Key
 
