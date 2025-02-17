@@ -233,7 +233,7 @@ Pass in a token to revoke access to that token.
 | Name              | Required | Type   | Description                       |
 |-------------------|----------|--------|-----------------------------------|
 | `token`           | Yes      | string | The token to be revoked           |
-| `token_hint_type` | No       | string | `access_token` or `refresh token` |
+| `token_hint_type` | No       | string | `access_token` or `refresh_token` |
 
 **Response**
 
