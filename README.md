@@ -20,13 +20,16 @@ layout:
 
 # Welcome
 
-Hey there! Welcome to the Kick Developer Docs 👋
+Hey there! Welcome to the KICK Dev Docs 👋
 
-You will find a range of features and documentation on how to integrate with the Kick API.
+We’re excited to launch KICK’s Public API and officially welcome third-party developers into the KICK ecosystem.
 
-## A letter to the Developers
+Our first release contains a number of endpoints that cover a wide range of functionality on KICK.
 
-Hi :wave: Just want to let you know what we are working on in this closed beta phase, to keep you up to date with what might be changing during this phase, what is stable and what is to come.
+We have more in the pipeline and are eager to collaborate with the community to better understand your top priorities.
+
+We’ve made it easy to submit feedback and contribute. Our team is listening to the feedback to guide our next steps. 
+
 
 ### Feedback
 
@@ -36,7 +39,8 @@ Following many other open-source projects, we will use GitHub as our central poi
 
 #### Short term feedback
 
-Although we will be extremely active on the GitHub Issues on this repository, we will also provide a means for shorter feedback and discussion via a channel in our [Discord](https://discord.gg/kick). Here you can ask questions, have discussions with the devs that have created the API or show off the cool things you've created. We are pretty opinionated people so there should be some great discussions on how to make this API and the community around it the best it can be!
+While we’ll be very active on GitHub Issues, we also welcome quick feedback and discussions in our [Discord channel](https://discord.gg/kick). Here, you can ask questions, share your creations, and engage in conversations to help improve the API and the community experience!
+
 
 ## API Roadmap
 
