@@ -40,7 +40,7 @@ The public key can also be fetched from this endpoint.
 ```
 https://api.kick.com/public/v1/public-key
 ```
-[Public Key](apis/public-key.md)
+[Public Key](../apis/public-key.md)
 
 ### Signature Creation
 
