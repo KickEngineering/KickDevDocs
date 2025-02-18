@@ -36,6 +36,11 @@ twIDAQAB
 -----END PUBLIC KEY-----
 ```
 
+The public key can also be fetched from this endpoint.
+```
+https://api.kick.com/public/v1/public-key
+```
+
 ### Signature Creation
 
 The signature is created through the concatenation of the following values into a single string, separated by a `.`:
