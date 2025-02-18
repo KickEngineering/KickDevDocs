@@ -31,7 +31,7 @@ The host URL is: _https://id.kick.com_
 
 ## Authorization Endpoint
 
-<mark style="color:green;">`GET`</mark> `/oauth/token`
+<mark style="color:green;">`GET`</mark> `/oauth/authorize`
 
 Directs the user to the authorization server where they can log in and approve the application's access request.
 
@@ -254,7 +254,7 @@ OK
 #### Example Request
 
 ```
-POST 
+POST
 https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
 ```
 
