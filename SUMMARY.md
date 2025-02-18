@@ -14,6 +14,8 @@
 * [Users](apis/users.md)
 * [Channels](apis/channels.md)
 * [Chat](apis/chat.md)
+* [Public Key](apis/public-key.md)
+
 
 ## Events
 
