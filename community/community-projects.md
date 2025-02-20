@@ -15,6 +15,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 ### JS / Typescript
 
 - [NodeJS Client for Kick.com](https://www.npmjs.com/package/@botk4cp3r/kick.js)
+- [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 
 ## Documentation
 
