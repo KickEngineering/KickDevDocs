@@ -28,3 +28,4 @@
 ## How do I contribute?
 
 * [Contributing](CONTRIBUTING.md)
+* [Community](community/community-projects.md)
