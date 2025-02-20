@@ -77,3 +77,11 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 | Chat bot badge                      | 🟡               | New                 |
 | Granular scope OAuth consent screen | 🟡               | New                 |
 | GET /public-key                     | 🟡               | New                 |
+
+## Changelog
+
+| Date       | Description                                         |
+| ---------- | --------------------------------------------------- |
+| 21/02/2025 | Kick-Event-Subscription-Id Webhook header           |
+| 20/02/2025 | Community Contributors page                         |
+| 19/02/2025 | Kick Dev API released                               |
