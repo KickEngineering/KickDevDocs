@@ -1,6 +1,6 @@
 # Community Driven Projects
 
-We want to shout out some community driven projects around the Kick Dev ecosystem.
+Highlighting standout community-driven projects within the Kick Dev ecosystem.
 
 > **_NOTE_**: Disclaimer
 > 
@@ -10,7 +10,7 @@ We want to shout out some community driven projects around the Kick Dev ecosyste
 
 ## Libraries
 
-Community built libraries to help you interact with the API.
+Explore community-built SDKs designed to simplify and enhance your interaction with the API.
 
 ### JS / Typescript
 
@@ -18,7 +18,7 @@ Community built libraries to help you interact with the API.
 
 ## Documentation
 
-Community created documentation on how to interact with the API.
+Community-created guides and resources to help you interact with the API efficiently.
 
 ### OAuth Flow
 
