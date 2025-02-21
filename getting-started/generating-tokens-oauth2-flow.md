@@ -113,7 +113,7 @@ Exchanges the code for a valid access token and a refresh token that can be used
   "access_token": "",
   "token_type": "",
   "refresh_token": "",
-  "expiry": "",
+  "expires_in": "",
   "scope": ""
 }
 ```
@@ -151,7 +151,7 @@ Request Form Body:
   "access_token": "",
   "token_type": "",
   "refresh_token": "",
-  "expiry": "",
+  "expires_in": "",
   "scope": ""
 }
 ```
@@ -180,7 +180,7 @@ Pass in refresh token and refresh both access and refresh codes.
   "access_token": "",
   "token_type": "",
   "refresh_token": "",
-  "expiry": "",
+  "expires_in": "",
   "scope": ""
 }
 ```
@@ -217,7 +217,7 @@ Request Form Body:
   "access_token": "",
   "token_type": "",
   "refresh_token": "",
-  "expiry": "",
+  "expires_in": "",
   "scope": ""
 }
 ```
