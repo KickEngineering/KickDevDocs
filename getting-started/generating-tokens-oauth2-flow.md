@@ -93,6 +93,11 @@ https://yourapp.com/callback?code=<code>&state=random-state
 
 Exchanges the code for a valid access token and a refresh token that can be used to make authorised requests to Kick's API.
 
+**Headers**
+| Name          | Required | Type    | Value                             |
+| ------------- | -------- | ------- | --------------------------------- |
+| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
 **Body**
 
 | Name            | Required | Type   | Description                                      |
@@ -133,14 +138,17 @@ Exchanges the code for a valid access token and a refresh token that can be used
 <pre><code>POST
 https://id.kick.com/oauth/token
 
-Request Form Body:
+Headers: 
+Content-Type: application/x-www-form-urlencoded
+
+Body:
 {
     grant_type=authorization_code
     client_id=&#x3C;client_id>
     client_secret=&#x3C;client_secret>
     redirect_uri=&#x3C;redirect_uri>
-<strong>    code_verifier=&#x3C;code_verifier>
-</strong>    code=&#x3C;CODE>
+    code_verifier=&#x3C;code_verifier>
+    code=&#x3C;CODE>
 }
 </code></pre>
 
@@ -161,6 +169,11 @@ Request Form Body:
 <mark style="color:green;">`POST`</mark> `/oauth/token`
 
 Pass in refresh token and refresh both access and refresh codes.
+
+**Headers**
+| Name          | Required | Type    | Value                             |
+| ------------- | -------- | ------- | --------------------------------- |
+| Content-Type  | true     | string  | application/x-www-form-urlencoded |
 
 **Body**
 
@@ -201,7 +214,10 @@ Pass in refresh token and refresh both access and refresh codes.
 POST
 https://id.kick.com/oauth/token
 
-Request Form Body:
+Headers: 
+Content-Type: application/x-www-form-urlencoded
+
+Body:
 {
     grant_type=refresh_token
     client_id=<client_id>
