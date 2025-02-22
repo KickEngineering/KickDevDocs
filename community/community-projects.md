@@ -21,6 +21,10 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 Community-created guides and resources to help you interact with the API efficiently.
 
+### API Proxy & Documentation
+
+- [Kichat API Proxy for Kick.com](https://docs.kichat.dev/)
+
 ### OAuth Flow
 
 - [Basic Node OAuth Flow example](https://gist.github.com/ACPixel/bd71dc716126153e04e41700e8a8820e)
