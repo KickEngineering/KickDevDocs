@@ -82,6 +82,6 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 
 | Date       | Description                                         |
 | ---------- | --------------------------------------------------- |
-| 21/02/2025 | Kick-Event-Subscription-Id Webhook header           |
+| 24/02/2025 | Kick-Event-Subscription-Id Webhook header           |
 | 20/02/2025 | Community Contributors page                         |
 | 19/02/2025 | Kick Dev API released                               |
