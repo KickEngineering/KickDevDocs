@@ -244,6 +244,11 @@ Body:
 
 Pass in a token to revoke access to that token.
 
+**Headers**
+| Name          | Required | Type    | Value                             |
+| ------------- | -------- | ------- | --------------------------------- |
+| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
 **Query**
 
 | Name              | Required | Type   | Description                       |
@@ -272,6 +277,9 @@ OK
 ```
 POST
 https://id.kick.com/oauth/revoke?token=<your_token>&token_hint_type=<token_type>
+
+Headers: 
+Content-Type: application/x-www-form-urlencoded
 ```
 
 #### Example Response
