@@ -48,35 +48,7 @@ We're rapidly building a world-class Public API with the following table highlig
 
 Our goals during this phase is to get feedback and iterate quickly. We want to create a well-crafted, stable API that works together seamlessly which means we will be continually improving the API. We will keep you up-to-date with what we are cooking.
 
-### Our Pipeline Currently
-
-🟢 - Stable
-
-🟡 - New
-
-🟠 - Implemented pending changes
-
-🔵 - In development
-
-🔴 - Not yet implemented
-
-| Feature                             | Implemented      | Status              |
-| ----------------------------------- | ---------------- | ------------------- |
-| GET /users                          | 🟢               | Stable              |
-| GET /channels                       | 🟢               | Stable              |
-| PATCH /channels                     | 🟢               | Stable              |
-| GET /categories/category\_id        | 🟢               | Stable              |
-| GET /categories                     | 🟢               | Stable              |
-| POST /chat                          | 🟡               | New                 |
-| POST /token/introspect              | 🟡               | New                 |
-| App Bots                            | 🟡               | New                 |
-| App Access Token                    | 🔴               | Not yet implemented |
-| Webhook Event-Signature             | 🟢               | Stable              |
-| Webhook Event Structure             | 🟢               | Stable              |
-| Optional Scopes                     | 🟡               | New                 |
-| Chat bot badge                      | 🟡               | New                 |
-| Granular scope OAuth consent screen | 🟡               | New                 |
-| GET /public-key                     | 🟡               | New                 |
+Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/projects/3).
 
 ## Changelog
 
