@@ -50,36 +50,6 @@ Our goals during this phase is to get feedback and iterate quickly. We want to c
 
 Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/projects/3).
 
-### Our Pipeline Currently
-
-🟢 - Stable
-
-🟡 - New
-
-🟠 - Implemented pending changes
-
-🔵 - In development
-
-🔴 - Not yet implemented
-
-| Feature                             | Implemented      | Status              |
-| ----------------------------------- | ---------------- | ------------------- |
-| GET /users                          | 🟢               | Stable              |
-| GET /channels                       | 🟢               | Stable              |
-| PATCH /channels                     | 🟢               | Stable              |
-| GET /categories/category\_id        | 🟢               | Stable              |
-| GET /categories                     | 🟢               | Stable              |
-| POST /chat                          | 🟡               | New                 |
-| POST /token/introspect              | 🟡               | New                 |
-| App Bots                            | 🟡               | New                 |
-| App Access Token                    | 🔴               | Not yet implemented |
-| Webhook Event-Signature             | 🟢               | Stable              |
-| Webhook Event Structure             | 🟢               | Stable              |
-| Optional Scopes                     | 🟡               | New                 |
-| Chat bot badge                      | 🟡               | New                 |
-| Granular scope OAuth consent screen | 🟡               | New                 |
-| GET /public-key                     | 🟡               | New                 |
-
 ## Changelog
 
 | Date       | Description                                         |
