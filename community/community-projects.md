@@ -17,6 +17,10 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 - [NodeJS Client for Kick.com](https://www.npmjs.com/package/@botk4cp3r/kick.js)
 - [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 
+### Golang
+
+- [Go Client for Kick.com](https://github.com/Scorfly/gokick)
+
 ## Documentation
 
 Community-created guides and resources to help you interact with the API efficiently.
