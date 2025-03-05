@@ -54,6 +54,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                         |
 | ---------- | --------------------------------------------------- |
+| 05/03/2025 | Allow editing app names on developer tab            |
 | 03/03/2025 | Added Livestream Information on Channels Endpoint   |
 | 24/02/2025 | Kick-Event-Subscription-Id Webhook header           |
 | 20/02/2025 | Community Contributors page                         |
