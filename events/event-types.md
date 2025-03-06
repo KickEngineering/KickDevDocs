@@ -172,3 +172,49 @@ Headers
   "created_at": "2025-01-14T16:08:06Z"
 }
 ```
+
+## Livestream Status Updated
+
+#### Livestream Status Updated - Stream started
+```json
+Headers
+- Kick-Event-Type: "livestream.status.updated"
+- Kick-Event-Version: “1”
+
+{
+  "broadcaster": {
+    "is_anonymous": false,
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel"
+  },
+  "is_live": true,
+  "title": "Stream Title",
+  "started_at": "2025-01-01T11:00:00+11:00",
+  "ended_at": null
+}
+```
+
+#### Livestream Status Updated - Stream ended
+```json
+Headers
+- Kick-Event-Type: "livestream.status.updated"
+- Kick-Event-Version: “1”
+
+{
+  "broadcaster": {
+    "is_anonymous": false,
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel"
+  },
+  "is_live": false,
+  "title": "Stream Title",
+  "started_at": "2025-01-01T11:00:00+11:00",
+  "ended_at": "2025-01-01T15:00:00+11:00"
+}
+```
