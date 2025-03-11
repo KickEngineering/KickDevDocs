@@ -28,19 +28,17 @@ Our first release contains a number of endpoints that cover a wide range of func
 
 We have more in the pipeline and are eager to collaborate with the community to better understand your top priorities.
 
-We’ve made it easy to submit feedback and contribute. Our team is listening to the feedback to guide our next steps. 
-
+We’ve made it easy to submit feedback and contribute. Our team is listening to the feedback to guide our next steps.
 
 ### Feedback
 
-We love contributions! Feel free to check out our [CONTRIBUTING.md](https://github.com/KickEngineering/KickDevDocs/blob/main/CONTRIBUTING.md) for more information on submitting improvements or raising issues.
+We love contributions! Feel free to check out our [CONTRIBUTING.md](CONTRIBUTING.md) for more information on submitting improvements or raising issues.
 
 Following many other open-source projects, we will use GitHub as our central point of feedback, bug reports and feature requests for the API. All this documentation is stored within a repository which we will make publicly accessible, to allow the community to contribute to the project. We might even look at publishing a public road map there, but we aren't at that stage yet.
 
 #### Short term feedback
 
 While we’ll be very active on GitHub Issues, we also welcome quick feedback and discussions in our [Discord channel](https://discord.gg/kick). Here, you can ask questions, share your creations, and engage in conversations to help improve the API and the community experience!
-
 
 ## API Roadmap
 
@@ -52,11 +50,11 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 ## Changelog
 
-| Date       | Description                                         |
-| ---------- | --------------------------------------------------- |
-| 07/03/2025 | Added livestream is live webhook event              |
-| 05/03/2025 | Allow editing app names on developer tab            |
-| 03/03/2025 | Added Livestream Information on Channels Endpoint   |
-| 24/02/2025 | Kick-Event-Subscription-Id Webhook header           |
-| 20/02/2025 | Community Contributors page                         |
-| 19/02/2025 | Kick Dev API released                               |
+| Date       | Description                                       |
+| ---------- | ------------------------------------------------- |
+| 11/03/2025 | Added livestream is live webhook event            |
+| 05/03/2025 | Allow editing app names on developer tab          |
+| 03/03/2025 | Added Livestream Information on Channels Endpoint |
+| 24/02/2025 | Kick-Event-Subscription-Id Webhook header         |
+| 20/02/2025 | Community Contributors page                       |
+| 19/02/2025 | Kick Dev API released                             |
