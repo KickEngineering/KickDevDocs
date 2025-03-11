@@ -4,14 +4,14 @@ icon: left-long-to-line
 
 # Subscribe to Events
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/public/v1/events/subscriptions" method="get" %}
+{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="get" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/public/v1/events/subscriptions" method="post" %}
+{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="post" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="https://api.kick.com/swagger/v1/doc.json" path="/public/v1/events/subscriptions" method="delete" %}
+{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="delete" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endswagger %}
+{% endopenapi %}
