@@ -18,6 +18,10 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 - [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 - [Kient - Typescript Client](https://github.com/zSoulweaver/kient)
 
+### Golang
+
+- [Golang Kick SDK](https://github.com/glichtv/kick-sdk)
+
 ## Documentation
 
 Community-created guides and resources to help you interact with the API efficiently.
