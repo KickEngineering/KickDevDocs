@@ -22,6 +22,13 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [Golang Kick SDK](https://github.com/glichtv/kick-sdk)
 
+### PHP
+- [PHP Client for Kick.com](https://github.com/danielhe4rt/kick-php-sdk)
+
+### C# / .NET
+
+- [KickLib - .NET Client](https://github.com/Bukk94/KickLib)
+
 ## Documentation
 
 Community-created guides and resources to help you interact with the API efficiently.
