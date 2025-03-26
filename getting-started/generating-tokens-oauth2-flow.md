@@ -9,7 +9,7 @@ description: The Kick OAuth Flow.
 
 There are 2 types of tokens that are available for the Kick Dev API: App Access Token and User Access Token. Each token has a unique OAuth flow to generate the token and are generally used in different scenarios.
 
-### App Access Token (Not yet implemented)
+### App Access Token
 
 App Access Tokens are generated through the Client Credentials flow. These server-to-server API tokens are the most basic form of token for accessing the API. They can access publicly available data and are ideal for use when user login is not required.
 
@@ -161,6 +161,73 @@ Body:
   "refresh_token": "",
   "expires_in": "",
   "scope": ""
+}
+```
+
+## App Access Token Endpoint
+
+<mark style="color:green;">`POST`</mark> `/oauth/token`
+
+Uses a client_id and client_secret to generate an app access token which can be used to obtain public data on Kick.
+
+**Headers**
+| Name          | Required | Type    | Value                             |
+| ------------- | -------- | ------- | --------------------------------- |
+| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
+**Body**
+
+| Name            | Required | Type   | Description                                      |
+| --------------- | -------- | ------ | ------------------------------------------------ |
+| `client_id`     | Yes      | string | Your application's client ID                     |
+| `client_secret` | Yes      | string | Your application's client secret                 |
+| `grant_type`    | Yes      | string | `client_credentials`                             |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+  "access_token": "",
+  "token_type": "",
+  "expires_in": "",
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```json
+{
+  "error": "Invalid request"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+#### Example Request
+
+<pre><code>POST
+https://id.kick.com/oauth/token
+
+Headers:
+Content-Type: application/x-www-form-urlencoded
+
+Body:
+{
+    grant_type=client_credentials
+    client_id=&#x3C;client_id>
+    client_secret=&#x3C;client_secret>
+}
+</code></pre>
+
+#### Example Response
+
+```
+{
+  "access_token": "",
+  "expires_in": "",
+  "token_type": "",
 }
 ```
 
