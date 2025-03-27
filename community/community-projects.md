@@ -27,7 +27,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 ### Python
 
-- [kickcom.py - Python Client](https://github.com/PredaaA/kickcom.py)
+- [kickcom.py - Python Async Client](https://github.com/PredaaA/kickcom.py)
 
 ## Documentation
 
