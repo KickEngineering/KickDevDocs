@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
+| 01/04/2025 | Added livestreams endpoint                        |
 | 25/03/2025 | Added App Access Tokens                           |
 | 11/03/2025 | Added livestream status webhook event             |
 | 05/03/2025 | Allow editing app names on developer tab          |
