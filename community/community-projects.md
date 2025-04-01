@@ -17,6 +17,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 - [NodeJS Client for Kick.com](https://www.npmjs.com/package/@botk4cp3r/kick.js)
 - [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 - [Kient - Typescript Client](https://github.com/zSoulweaver/kient)
+- [Better Auth - TypeScript Framework for Auth](https://www.better-auth.com/docs/authentication/kick)
 
 ### PHP
 - [PHP Client for Kick.com](https://github.com/danielhe4rt/kick-php-sdk)
