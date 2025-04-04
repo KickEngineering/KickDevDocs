@@ -100,7 +100,8 @@ Headers
     "channel_slug": "subscriber_channel"
   },
   "duration": 3,
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
@@ -140,7 +141,8 @@ Public Gift Structure
       "channel_slug": "giftee_channel"
     }
   ],
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
@@ -169,7 +171,8 @@ Headers
     "channel_slug": "subscriber_channel"
   },
   "duration": 1,
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
