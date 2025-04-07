@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
+| 07/04/2025 | Added identity object to chat sender payload      |
 | 01/04/2025 | Added livestreams endpoint                        |
 | 25/03/2025 | Added App Access Tokens                           |
 | 11/03/2025 | Added livestream status webhook event             |
