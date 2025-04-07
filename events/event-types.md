@@ -124,7 +124,8 @@ Headers
     "identity": null
   },
   "duration": 3,
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
@@ -167,7 +168,8 @@ Public Gift Structure
       "identity": null
     }
   ],
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
@@ -198,7 +200,8 @@ Headers
     "identity": null
   },
   "duration": 1,
-  "created_at": "2025-01-14T16:08:06Z"
+  "created_at": "2025-01-14T16:08:06Z",
+  "expires_at": "2025-02-14T16:08:06Z"
 }
 ```
 
