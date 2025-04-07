@@ -20,7 +20,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": { // no identity for broadcasters for the moment
+      "username_color": "",
+      "badges": null
+    }
   },
   "sender": {
     "is_anonymous": false,
@@ -28,7 +32,21 @@ Headers
     "username": "sender_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_slug": "sender_channel"
+    "channel_slug": "sender_channel",
+    "identity": {
+      "username_color": "#FF5733",
+      "badges": [
+        {
+          "text": "Moderator",
+          "type": "moderator",
+        },
+        {
+          "text": "Sub Gifter",
+          "type": "sub_gifter",
+          "count": 5,
+        }
+      ]
+    }
   },
   "content": "This is a test message with emotes!",
   "emotes": [
@@ -62,7 +80,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "follower": {
     "is_anonymous": false,
@@ -70,7 +92,11 @@ Headers
     "username": "follower_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_slug": "follower_channel"
+    "channel_slug": "follower_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   }
 }
 ```
@@ -89,7 +115,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "subscriber": {
     "is_anonymous": false,
@@ -97,7 +127,11 @@ Headers
     "username": "subscriber_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_slug": "subscriber_channel"
+    "channel_slug": "subscriber_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "duration": 3,
   "created_at": "2025-01-14T16:08:06Z"
@@ -119,7 +153,11 @@ Public Gift Structure
     "username": "broadcaster_name",
     "is_verified": true,    
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "gifter": {
     "is_anonymous": false,
@@ -127,7 +165,11 @@ Public Gift Structure
     "username": "gifter_name", // null if is_anonymous=true
     "is_verified": false, // null if is_anonymous=true
     "profile_picture": "https://example.com/sender_avatar.jpg", // null if is_anonymous=true
-    "channel_slug": "gifter_channel" // null if is_anonymous=true
+    "channel_slug": "gifter_channel", // null if is_anonymous=true
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "giftees": 
   [
@@ -137,7 +179,11 @@ Public Gift Structure
       "username": "giftee_name",
       "is_verified": true,
       "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-      "channel_slug": "giftee_channel"
+      "channel_slug": "giftee_channel",
+      "identity": {
+        "username_color": "",
+        "badges": null
+      }
     }
   ],
   "created_at": "2025-01-14T16:08:06Z"
@@ -158,7 +204,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "subscriber": {
     "is_anonymous": false,
@@ -166,7 +216,11 @@ Headers
     "username": "subscriber_name",
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
-    "channel_slug": "subscriber_channel"
+    "channel_slug": "subscriber_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "duration": 1,
   "created_at": "2025-01-14T16:08:06Z"
@@ -188,7 +242,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "is_live": true,
   "title": "Stream Title",
@@ -210,7 +268,11 @@ Headers
     "username": "broadcaster_name",
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
-    "channel_slug": "broadcaster_channel"
+    "channel_slug": "broadcaster_channel",
+    "identity": {
+      "username_color": "",
+      "badges": null
+    }
   },
   "is_live": false,
   "title": "Stream Title",
