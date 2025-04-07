@@ -21,10 +21,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": { // no identity for broadcasters for the moment
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null // no identity for broadcasters at the moment
   },
   "sender": {
     "is_anonymous": false,
@@ -44,6 +41,11 @@ Headers
           "text": "Sub Gifter",
           "type": "sub_gifter",
           "count": 5,
+        },
+        {
+          "text": "Subscriber",
+          "type": "subscriber",
+          "count": 3,
         }
       ]
     }
@@ -81,10 +83,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "follower": {
     "is_anonymous": false,
@@ -93,10 +92,7 @@ Headers
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "follower_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   }
 }
 ```
@@ -116,10 +112,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "subscriber": {
     "is_anonymous": false,
@@ -128,10 +121,7 @@ Headers
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "subscriber_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "duration": 3,
   "created_at": "2025-01-14T16:08:06Z"
@@ -154,10 +144,7 @@ Public Gift Structure
     "is_verified": true,    
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "gifter": {
     "is_anonymous": false,
@@ -166,10 +153,7 @@ Public Gift Structure
     "is_verified": false, // null if is_anonymous=true
     "profile_picture": "https://example.com/sender_avatar.jpg", // null if is_anonymous=true
     "channel_slug": "gifter_channel", // null if is_anonymous=true
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null // null if is_anonymous=true
   },
   "giftees": 
   [
@@ -180,10 +164,7 @@ Public Gift Structure
       "is_verified": true,
       "profile_picture": "https://example.com/broadcaster_avatar.jpg",
       "channel_slug": "giftee_channel",
-      "identity": {
-        "username_color": "",
-        "badges": null
-      }
+      "identity": null
     }
   ],
   "created_at": "2025-01-14T16:08:06Z"
@@ -205,10 +186,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "subscriber": {
     "is_anonymous": false,
@@ -217,10 +195,7 @@ Headers
     "is_verified": false,
     "profile_picture": "https://example.com/sender_avatar.jpg",
     "channel_slug": "subscriber_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "duration": 1,
   "created_at": "2025-01-14T16:08:06Z"
@@ -243,10 +218,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "is_live": true,
   "title": "Stream Title",
@@ -269,10 +241,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": {
-      "username_color": "",
-      "badges": null
-    }
+    "identity": null
   },
   "is_live": false,
   "title": "Stream Title",
