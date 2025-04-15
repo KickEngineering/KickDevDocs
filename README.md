@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
+| 16/04/2025 | Add livestream metadata webhook event             |
 | 08/04/2025 | Added get channels by slug                        |
 | 08/04/2025 | Added thumbnail to channels response              |
 | 07/04/2025 | Added expires_at to channel subscriptions payload |
