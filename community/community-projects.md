@@ -18,6 +18,10 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 - [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 - [Kient - Typescript Client](https://github.com/zSoulweaver/kient)
 
+### Golang
+
+- [Golang Kick SDK](https://github.com/glichtv/kick-sdk)
+
 ### PHP
 - [PHP Client for Kick.com](https://github.com/danielhe4rt/kick-php-sdk)
 
