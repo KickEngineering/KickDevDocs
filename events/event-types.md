@@ -252,3 +252,33 @@ Headers
   "ended_at": "2025-01-01T15:00:00+11:00"
 }
 ```
+
+## Livestream Metadata Updated
+
+```json
+Headers
+- Kick-Event-Type: "livestream.metadata.updated"
+- Kick-Event-Version: “1”
+
+{
+  "broadcaster": {
+    "is_anonymous": false,
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel",
+    "identity": null
+  },
+  "metadata": {
+    "title": "Stream Title",
+    "language": "en",
+    "has_mature_content": true,
+    "category": {
+      "id": 123,
+      "name": "Category name",
+      "thumbnail": "http://example.com/image123"
+    }
+  }
+}
+```
