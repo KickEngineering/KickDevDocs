@@ -25,10 +25,15 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [KickLib - .NET Client](https://github.com/Bukk94/KickLib)
 
+### Golang
+
+- [Go Client for Kick.com](https://github.com/Scorfly/gokick)
+
 ## Documentation
 
 Community-created guides and resources to help you interact with the API efficiently.
 
 ### OAuth Flow
 
-- [Basic Node OAuth Flow example](https://gist.github.com/ACPixel/bd71dc716126153e04e41700e8a8820e)
+- [Basic Node OAuth Flow JS example](https://gist.github.com/ACPixel/bd71dc716126153e04e41700e8a8820e)
+- [Basic Node OAuth Flow Python example](https://github.com/blazejszhxk/kick-auth/)
