@@ -18,6 +18,9 @@ layout:
     visible: true
 ---
 
+\[ [English](README.md) \] \[ [日本語](README-JA.md) \]
+
+
 # Welcome
 
 Hey there! Welcome to the KICK Dev Docs 👋
@@ -30,13 +33,13 @@ We have more in the pipeline and are eager to collaborate with the community to 
 
 We’ve made it easy to submit feedback and contribute. Our team is listening to the feedback to guide our next steps.
 
-### Feedback
+## Feedback
 
 We love contributions! Feel free to check out our [CONTRIBUTING.md](CONTRIBUTING.md) for more information on submitting improvements or raising issues.
 
 Following many other open-source projects, we will use GitHub as our central point of feedback, bug reports and feature requests for the API. All this documentation is stored within a repository which we will make publicly accessible, to allow the community to contribute to the project. We might even look at publishing a public road map there, but we aren't at that stage yet.
 
-#### Short term feedback
+### Short term feedback
 
 While we’ll be very active on GitHub Issues, we also welcome quick feedback and discussions in our [Discord channel](https://discord.gg/kick). Here, you can ask questions, share your creations, and engage in conversations to help improve the API and the community experience!
 
