@@ -53,6 +53,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
 | 23/05/2025 | Added moderation banned webhook event             |
+| 21/05/2025 | Added moderation endpoints                        |
 | 05/05/2025 | Added livestream metadata webhook event           |
 | 15/04/2025 | Added reply chat message                          |
 | 08/04/2025 | Added get channels by slug                        |
@@ -60,10 +61,3 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 | 07/04/2025 | Added expires_at to channel subscriptions payload |
 | 07/04/2025 | Added identity object to chat sender payload      |
 | 01/04/2025 | Added livestreams endpoint                        |
-| 25/03/2025 | Added App Access Tokens                           |
-| 11/03/2025 | Added livestream status webhook event             |
-| 05/03/2025 | Allow editing app names on developer tab          |
-| 03/03/2025 | Added Livestream Information on Channels Endpoint |
-| 24/02/2025 | Kick-Event-Subscription-Id Webhook header         |
-| 20/02/2025 | Community Contributors page                       |
-| 19/02/2025 | Kick Dev API released                             |

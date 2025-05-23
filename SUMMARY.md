@@ -14,6 +14,7 @@
 * [Users](apis/users.md)
 * [Channels](apis/channels.md)
 * [Chat](apis/chat.md)
+* [Moderation](apis/moderation.md)
 * [Livestreams](apis/livestreams.md)
 * [Public Key](apis/public-key.md)
 
