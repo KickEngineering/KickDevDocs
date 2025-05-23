@@ -52,7 +52,8 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
-| 05/05/2025 | Add livestream metadata webhook event             |
+| 23/05/2025 | Added moderation banned webhook event             |
+| 05/05/2025 | Added livestream metadata webhook event           |
 | 15/04/2025 | Added reply chat message                          |
 | 08/04/2025 | Added get channels by slug                        |
 | 08/04/2025 | Added thumbnail to channels response              |

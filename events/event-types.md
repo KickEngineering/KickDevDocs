@@ -282,3 +282,46 @@ Headers
   }
 }
 ```
+
+## Moderation Banned
+
+```json
+Headers
+- Kick-Event-Type: "moderation.banned"
+- Kick-Event-Version: “1”
+
+{
+  "broadcaster": {
+    "is_anonymous": false,
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel",
+    "identity": null
+  },
+  "moderator": {
+    "is_anonymous": false,
+    "user_id": 987654321,
+    "username": "moderator_name",
+    "is_verified": false,
+    "profile_picture": "https://example.com/moderator_avatar.jpg",
+    "channel_slug": "moderator_channel",
+    "identity": null
+  },
+  "banned_user": {
+    "is_anonymous": false,
+    "user_id": 135790135,
+    "username": "banned_user_name",
+    "is_verified": false,
+    "profile_picture": "https://example.com/banned_user_avatar.jpg",
+    "channel_slug": "banned_user_channel",
+    "identity": null
+  },
+  "metadata": {
+    "reason": "banned reason",
+    "created_at": "2025-01-14T16:08:05Z",
+    "expires_at": "2025-01-14T16:10:06Z", // null for permanent bans
+  }
+}
+```
