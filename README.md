@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
+| 23/05/2025 | Added moderation banned webhook event             |
 | 21/05/2025 | Added moderation endpoints                        |
 | 05/05/2025 | Added livestream metadata webhook event           |
 | 15/04/2025 | Added reply chat message                          |
