@@ -32,3 +32,4 @@ Community-created guides and resources to help you interact with the API efficie
 ### OAuth Flow
 
 - [Basic Node OAuth Flow example](https://gist.github.com/ACPixel/bd71dc716126153e04e41700e8a8820e)
+- [Better-Auth](https://www.better-auth.com/docs/authentication/kick)
