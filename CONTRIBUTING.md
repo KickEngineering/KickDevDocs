@@ -7,7 +7,7 @@ description: How to make a contribution to the Kick Dev ecosystem
 <strong>TL;DR</strong>
 
 1. Submit feedback via [GitHub Issues](https://github.com/KickEngineering/KickDevDocs/issues)
-2. Participate in conversations via [Discord](https://discord.gg/kick)
+2. Participate in conversations via [Discord](https://discord.gg/nUMUjdyMJH)
 3. Contribute to our documentation by opening a [Pull Request](https://github.com/KickEngineering/kickdevdocs) 
 
 If you've made it here, thank you for wanting to contribute to our project!
@@ -28,7 +28,7 @@ We are looking for the following:
 
 ## Discord
 
-Our [Discord](https://discord.gg/kick) is the location for back and forth conversations with other like-minded developers about the API.
+Our [Discord](https://discord.gg/nUMUjdyMJH) is the location for back and forth conversations with other like-minded developers about the API.
 
 Discuss how you've done something, ask questions, answer questions and showcase your work to the community!
 
