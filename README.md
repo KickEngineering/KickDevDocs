@@ -38,7 +38,7 @@ Following many other open-source projects, we will use GitHub as our central poi
 
 #### Short term feedback
 
-While we’ll be very active on GitHub Issues, we also welcome quick feedback and discussions in our [Discord channel](https://discord.gg/kick). Here, you can ask questions, share your creations, and engage in conversations to help improve the API and the community experience!
+While we’ll be very active on GitHub Issues, we also welcome quick feedback and discussions in our [Discord channel](https://discord.gg/SvyWXP5aWb). Here, you can ask questions, share your creations, and engage in conversations to help improve the API and the community experience!
 
 ## API Roadmap
 
