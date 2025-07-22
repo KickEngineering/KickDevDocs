@@ -52,7 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                       |
 | ---------- | ------------------------------------------------- |
-| XX/07/2025 | Added created_at to chat message payload          |
+| 22/07/2025 | Added created_at to chat message payload          |
 | 23/05/2025 | Added moderation banned webhook event             |
 | 21/05/2025 | Added moderation endpoints                        |
 | 05/05/2025 | Added livestream metadata webhook event           |
