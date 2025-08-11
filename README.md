@@ -50,15 +50,16 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 ## Changelog
 
-| Date       | Description                                       |
-| ---------- | ------------------------------------------------- |
-| 22/07/2025 | Added created_at to chat message payload          |
-| 23/05/2025 | Added moderation banned webhook event             |
-| 21/05/2025 | Added moderation endpoints                        |
-| 05/05/2025 | Added livestream metadata webhook event           |
-| 15/04/2025 | Added reply chat message                          |
-| 08/04/2025 | Added get channels by slug                        |
-| 08/04/2025 | Added thumbnail to channels response              |
-| 07/04/2025 | Added expires_at to channel subscriptions payload |
-| 07/04/2025 | Added identity object to chat sender payload      |
-| 01/04/2025 | Added livestreams endpoint                        |
+| Date       | Description                                              |
+| ---------- | ---------------------------------------------------------|
+| 28/07/2025 | Allow multiple broadcaster_user_id params on livestreams |
+| 22/07/2025 | Added created_at to chat message payload                 |
+| 23/05/2025 | Added moderation banned webhook event                    |
+| 21/05/2025 | Added moderation endpoints                               |
+| 05/05/2025 | Added livestream metadata webhook event                  |
+| 15/04/2025 | Added reply chat message                                 |
+| 08/04/2025 | Added get channels by slug                               |
+| 08/04/2025 | Added thumbnail to channels response                     |
+| 07/04/2025 | Added expires_at to channel subscriptions payload        |
+| 07/04/2025 | Added identity object to chat sender payload             |
+| 01/04/2025 | Added livestreams endpoint                               |
