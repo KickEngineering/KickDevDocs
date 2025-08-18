@@ -25,6 +25,10 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [KickLib - .NET Client](https://github.com/Bukk94/KickLib)
 
+### Java
+
+- [Kick4J - Java Client for Kick.com](https://github.com/TeksuSiK/kick4j)
+
 ## Documentation
 
 Community-created guides and resources to help you interact with the API efficiently.
