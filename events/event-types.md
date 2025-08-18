@@ -7,6 +7,7 @@ description: Request body payloads for Webhook API requests
 
 ## Chat Message
 
+No identity for broadcasters at the moment.
 ```
 Headers
 - Kick-Event-Type: “chat.message.sent”
@@ -134,6 +135,7 @@ Headers
 ```
 
 ## Channel Subscription Gifts
+
 Fields in `gifter` are null if the gifter is anonymous (`gifter.is_anonymous`).
 ```
 Headers
@@ -213,6 +215,7 @@ Headers
 ## Livestream Status Updated
 
 #### Livestream Status Updated - Stream started
+
 ```
 Headers
 - Kick-Event-Type: "livestream.status.updated"
@@ -237,6 +240,7 @@ Headers
 ```
 
 #### Livestream Status Updated - Stream ended
+
 ```
 Headers
 - Kick-Event-Type: "livestream.status.updated"
@@ -292,6 +296,7 @@ Headers
 ```
 
 ## Moderation Banned
+
 `metadata.expires_at` is null if ban is permanent.
 ```
 Headers
