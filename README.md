@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                              |
 | ---------- | ---------------------------------------------------------|
+| 20/08/2025 | Added replies_to field on chat message sent event        |
 | 28/07/2025 | Allow multiple broadcaster_user_id params on livestreams |
 | 22/07/2025 | Added created_at to chat message payload                 |
 | 23/05/2025 | Added moderation banned webhook event                    |
