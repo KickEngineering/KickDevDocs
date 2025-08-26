@@ -25,7 +25,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [KickLib - .NET Client](https://github.com/Bukk94/KickLib)
 
-### GoLang
+### Go
 
 - [Kick Go SDK](https://github.com/henrikah/kick-go-sdk)
 
