@@ -10,3 +10,6 @@ Livestreams APIs allow an app to interact with livestreams in the Kick website. 
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endopenapi %}
 
+{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/livestreams/stats" method="get" %}
+[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
+{% endopenapi %}
