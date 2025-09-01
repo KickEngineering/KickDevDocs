@@ -7,6 +7,7 @@
 * [App Setup](getting-started/kick-apps-setup.md)
 * [OAuth 2.1](getting-started/generating-tokens-oauth2-flow.md)
 * [Scopes](scopes/scopes.md)
+* [Swagger Specification](getting-started/swagger-specification.md)
 
 ## APIs
 
