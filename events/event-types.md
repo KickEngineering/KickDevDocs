@@ -14,6 +14,19 @@ Headers
 
 {
   "message_id": "unique_message_id_123",
+  "replies_to": {
+    "message_id": "unique_message_id_456",
+    "content": "This is the parent message!",
+    "sender": {
+      "is_anonymous": false,
+      "user_id": 12345,
+      "username": "parent_sender_name",
+      "is_verified": false,
+      "profile_picture": "https://example.com/parent_sender_avatar.jpg",
+      "channel_slug": "parent_sender_channel",
+      "identity": null // no identity for sender in replies_to at the moment
+    },
+  },
   "broadcaster": {
     "is_anonymous": false,
     "user_id": 123456789,
