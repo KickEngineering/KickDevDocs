@@ -12,11 +12,16 @@ Highlighting standout community-driven projects within the Kick Dev ecosystem.
 
 Explore community-built SDKs designed to simplify and enhance your interaction with the API.
 
+### Python
+
+- [Kick.com Python Package](https://pypi.org/project/kickpython/)
+
 ### JS / Typescript
 
 - [NodeJS Client for Kick.com](https://www.npmjs.com/package/@botk4cp3r/kick.js)
 - [NodeJS OAuth for Kick.com](https://www.npmjs.com/package/kick-auth)
 - [Kient - Typescript Client](https://github.com/zSoulweaver/kient)
+- [Kick-API-TYPES - Typing for the Kick.com API](https://github.com/fb-sean/kick-api-types)
 
 ### PHP
 - [PHP Client for Kick.com](https://github.com/danielhe4rt/kick-php-sdk)
@@ -25,8 +30,9 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [KickLib - .NET Client](https://github.com/Bukk94/KickLib)
 
-### Go
+### Golang
 
+- [Go Client for Kick.com](https://github.com/Scorfly/gokick)
 - [Kick Go SDK](https://github.com/henrikah/kick-go-sdk)
 
 ## Documentation
