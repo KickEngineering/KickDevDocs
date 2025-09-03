@@ -12,6 +12,10 @@ Highlighting standout community-driven projects within the Kick Dev ecosystem.
 
 Explore community-built SDKs designed to simplify and enhance your interaction with the API.
 
+### Python
+
+- [Kick.com Python Package](https://pypi.org/project/kickpython/)
+
 ### JS / Typescript
 
 - [NodeJS Client for Kick.com](https://www.npmjs.com/package/@botk4cp3r/kick.js)
