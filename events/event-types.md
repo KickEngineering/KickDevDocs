@@ -5,6 +5,18 @@ description: Request body payloads for Webhook API requests
 
 # Webhook Payloads
 
+| Event | Name | Version | Description |
+|-------|------|---------|-------------|
+| [Chat Message](#chat-message) | `chat.message.sent` | 1 | Fired when a message has been sent in a stream's chat. |
+| [Channel Follow](#channel-follow) | `channel.followed` | 1 | Fired when a user follows a channel. |
+| [Channel Subscription Renewal](#channel-subscription-renewal) | `channel.subscription.renewal` | 1 | Fired when a user's subscription to a channel is renewed. |
+| [Channel Subscription Gifts](#channel-subscription-gifts) | `channel.subscription.gifts` | 1 | Fired when a user gifts subscriptions to a channel. |
+| [Channel Subscription Created](#channel-subscription-created) | `channel.subscription.new` | 1 | Fired when a user first subscribes to a channel. |
+| [Livestream Status Updated](#livestream-status-updated) | `livestream.status.updated` | 1 | Fired when a stream's status has been updated. For example, a stream could have started or ended |
+| [Livestream Metadata Updated](#livestream-metadata-updated) | `livestream.metadata.updated` | 1 | Fired when a stream's metadata has been updated. For example, a stream's title could have changed. |
+| [Moderation Banned](#moderation-banned) | `moderation.banned` | 1 | Fired when a user has been banned from a channel. |
+| [Kicks Gifted](#kicks-gifted) | `kicks.gifted` | 1 | Fired when a user gifts kicks to a channel. |
+
 ## Chat Message
 
 ```json
@@ -337,5 +349,38 @@ Headers
     "created_at": "2025-01-14T16:08:05Z",
     "expires_at": "2025-01-14T16:10:06Z", // null for permanent bans
   }
+}
+```
+
+## Kicks Gifted
+
+```json
+Headers
+- Kick-Event-Type: "kicks.gifted"
+- Kick-Event-Version: “1”
+
+{
+  "broadcaster": {
+    "user_id": 123456789,
+    "username": "broadcaster_name",
+    "is_verified": true,
+    "profile_picture": "https://example.com/broadcaster_avatar.jpg",
+    "channel_slug": "broadcaster_channel"
+  },
+  "sender": {
+    "user_id": 987654321,
+    "username": "gift_sender",
+    "is_verified": false,
+    "profile_picture": "https://example.com/sender_avatar.jpg",
+    "channel_slug": "gift_sender_channel"
+  },
+  "gift": {
+    "amount": 100,
+    "name": "Full Send",
+    "type": "BASIC",
+    "tier": "BASIC",
+    "message": "w"
+  },
+  "created_at": "2025-10-20T04:00:08.634Z"
 }
 ```
