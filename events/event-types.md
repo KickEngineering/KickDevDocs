@@ -19,11 +19,13 @@ description: Request body payloads for Webhook API requests
 
 ## Chat Message
 
-```json
+No identity for broadcasters at the moment.
+```
 Headers
 - Kick-Event-Type: “chat.message.sent”
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "message_id": "unique_message_id_123",
   "replies_to": {
@@ -46,7 +48,7 @@ Headers
     "is_verified": true,
     "profile_picture": "https://example.com/broadcaster_avatar.jpg",
     "channel_slug": "broadcaster_channel",
-    "identity": null // no identity for broadcasters at the moment
+    "identity": null
   },
   "sender": {
     "is_anonymous": false,
@@ -60,17 +62,17 @@ Headers
       "badges": [
         {
           "text": "Moderator",
-          "type": "moderator",
+          "type": "moderator"
         },
         {
           "text": "Sub Gifter",
           "type": "sub_gifter",
-          "count": 5,
+          "count": 5
         },
         {
           "text": "Subscriber",
           "type": "subscriber",
-          "count": 3,
+          "count": 3
         }
       ]
     }
@@ -96,11 +98,12 @@ Headers
 
 ## Channel Follow
 
-```json
+```
 Headers
 - Kick-Event-Type: “channel.followed”
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -125,11 +128,12 @@ Headers
 
 ## Channel Subscription Renewal
 
-```json
+```
 Headers
 - Kick-Event-Type: “channel.subscription.renewal”
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -157,12 +161,13 @@ Headers
 
 ## Channel Subscription Gifts
 
-```json
+Fields in `gifter` are null if the gifter is anonymous (`gifter.is_anonymous`).
+```
 Headers
 - Kick-Event-Type: “channel.subscription.gifts”
 - Kick-Event-Version: “1”
-
-Public Gift Structure
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -175,12 +180,12 @@ Public Gift Structure
   },
   "gifter": {
     "is_anonymous": false,
-    "user_id": 987654321, // null if is_anonymous=true
-    "username": "gifter_name", // null if is_anonymous=true
-    "is_verified": false, // null if is_anonymous=true
-    "profile_picture": "https://example.com/sender_avatar.jpg", // null if is_anonymous=true
-    "channel_slug": "gifter_channel", // null if is_anonymous=true
-    "identity": null // null if is_anonymous=true
+    "user_id": 987654321,
+    "username": "gifter_name",
+    "is_verified": false,
+    "profile_picture": "https://example.com/sender_avatar.jpg",
+    "channel_slug": "gifter_channel",
+    "identity": null
   },
   "giftees": 
   [
@@ -201,11 +206,12 @@ Public Gift Structure
 
 ## Channel Subscription Created
 
-```json
+```
 Headers
 - Kick-Event-Type: “channel.subscription.new”
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -234,11 +240,13 @@ Headers
 ## Livestream Status Updated
 
 #### Livestream Status Updated - Stream started
-```json
+
+```
 Headers
 - Kick-Event-Type: "livestream.status.updated"
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -257,11 +265,13 @@ Headers
 ```
 
 #### Livestream Status Updated - Stream ended
-```json
+
+```
 Headers
 - Kick-Event-Type: "livestream.status.updated"
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -281,11 +291,12 @@ Headers
 
 ## Livestream Metadata Updated
 
-```json
+```
 Headers
 - Kick-Event-Type: "livestream.metadata.updated"
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -311,11 +322,13 @@ Headers
 
 ## Moderation Banned
 
-```json
+`metadata.expires_at` is null if ban is permanent.
+```
 Headers
 - Kick-Event-Type: "moderation.banned"
 - Kick-Event-Version: “1”
-
+```
+```json
 {
   "broadcaster": {
     "is_anonymous": false,
@@ -347,7 +360,7 @@ Headers
   "metadata": {
     "reason": "banned reason",
     "created_at": "2025-01-14T16:08:05Z",
-    "expires_at": "2025-01-14T16:10:06Z", // null for permanent bans
+    "expires_at": "2025-01-14T16:10:06Z"
   }
 }
 ```
