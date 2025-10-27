@@ -17,6 +17,7 @@
 * [Moderation](apis/moderation.md)
 * [Livestreams](apis/livestreams.md)
 * [Public Key](apis/public-key.md)
+* [KICKs](apis/kicks.md)
 
 
 ## Events
