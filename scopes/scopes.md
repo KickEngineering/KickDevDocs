@@ -17,3 +17,4 @@ These scopes are for apps using OAuth 2.1 authorization code grants for authoriz
 | `streamkey:read`   | Read stream key     | Read a user's stream URL and stream key                                            |
 | `events:subscribe` | Subscribe to events | Subscribe to all channel events on Kick e.g. chat messages, follows, subscriptions |
 | `moderation:ban`   | Execute moderations | Execute moderation actions for moderators                                          |
+| `kicks:read`       | Read KICKs info     | View KICKs related information in Kick e.g leaderboards, etc.                      |
