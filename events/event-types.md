@@ -5,6 +5,8 @@ description: Request body payloads for Webhook API requests
 
 # Webhook Payloads
 
+## Events
+
 | Event | Name | Version | Description |
 |-------|------|---------|-------------|
 | [Chat Message](#chat-message) | `chat.message.sent` | 1 | Fired when a message has been sent in a stream's chat. |

@@ -9,7 +9,7 @@ icon: left-long-to-line
 {% endopenapi %}
 
 
-Note: The `events.name` field corresponds to the `Kick-Event-Type` header defined in [Event types](https://docs.kick.com/events/event-types)
+Note: The `event` field corresponds to the appropriate Event name defined in the [Events table](https://docs.kick.com/events/event-types#events)
 {% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="post" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endopenapi %}
