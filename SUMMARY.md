@@ -19,7 +19,6 @@
 * [Public Key](apis/public-key.md)
 * [KICKs](apis/kicks.md)
 
-
 ## Events
 
 * [Introduction](events/introduction.md)
@@ -27,6 +26,14 @@
 * [Subscribe to Events](events/subscribe-to-events.md)
 * [Webhook Payloads](events/event-types.md)
 
+## Organizations
+
+* [Organization Management](organizations/organization-management.md)
+
+## Drops
+
+* [Drops Guide](drops/drops-guide.md)
+* [Drops FAQs](drops/drops-faqs.md)
 
 ## How do I contribute?
 
