@@ -44,7 +44,7 @@ You can link your Kick account to your game account at any time by clicking the 
 ## What happens if I try to claim a reward without linking my accounts?
 You'll see an error message. Make sure to connect your accounts before attempting to claim any rewards.
 
-## Can I link multiple game accounts to my Kick account?
+## Can I link multiple game accounts per game to my Kick account?
 No, you can only link one Kick account to one game account per game.
 
 ## How do I unlink my game account?
@@ -62,6 +62,9 @@ Yes, you can view closed campaigns from the last 30 days in the All Campaigns ta
 ## Can I see my past Drops history?
 Yes, all the Drops that you have participated in show up in your Inventory. If you have claimed all the rewards for that campaign, it goes under the Claimed section. If the campaign has ended, it goes under the Expired section until the grace period is over. After the grace period is up, the campaign will no longer appear in your Inventory. You also stop accumulating watch time if a campaign is expired.
 
+## What types of rewards can I earn through Drops?
+Rewards vary by game and can include cosmetic items, in-game currency, exclusive skins, beta access, or other digital items determined by the game developers.
+
 ## My progress isn't tracking properly. What should I do?
 Progress is tracked every 5 minutes, so avoid changing tabs or refreshing the page frequently. If issues persist, reach out to support@kick.com.
 
@@ -74,6 +77,3 @@ If you successfully claimed a reward but haven't received the item in-game, reac
 ## Who should I contact for Drops support?
 - For general Drops issues: support@kick.com
 - For reward fulfillment issues: Contact the game developer's support team
-
-## What types of rewards can I earn through Drops?
-Rewards vary by game and can include cosmetic items, in-game currency, exclusive skins, beta access, or other digital items determined by the game developers.
