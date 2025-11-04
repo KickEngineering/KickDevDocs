@@ -14,7 +14,7 @@ App Access Tokens and User Access Tokens can access this.
 | `Kick-Event-Subscription-Id`   | ULID                 | Subscription ID associated with event   |
 | `Kick-Event-Signature`         | Base64 Encode String | Signature to verify the sender          |
 | `Kick-Event-Message-Timestamp` | RFC3339 Date-time    | Timestamp of when the message was sent  |
-| `Kick-Event-Type`              | string               | e.g. `channel:write`                    |
+| `Kick-Event-Type`              | string               | e.g. `chat.message.sent`                |
 | `Kick-Event-Version`           | string               | e.g. `1`                                |
 
 ## Webhook Sender Validation

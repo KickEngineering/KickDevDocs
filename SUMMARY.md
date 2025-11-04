@@ -14,8 +14,10 @@
 * [Users](apis/users.md)
 * [Channels](apis/channels.md)
 * [Chat](apis/chat.md)
+* [Moderation](apis/moderation.md)
+* [Livestreams](apis/livestreams.md)
 * [Public Key](apis/public-key.md)
-
+* [KICKs](apis/kicks.md)
 
 ## Events
 
@@ -24,6 +26,14 @@
 * [Subscribe to Events](events/subscribe-to-events.md)
 * [Webhook Payloads](events/event-types.md)
 
+## Organizations
+
+* [Organization Management](organizations/organization-management.md)
+
+## Drops
+
+* [Drops Guide](drops/drops-guide.md)
+* [Drops FAQs](drops/drops-faqs.md)
 
 ## How do I contribute?
 

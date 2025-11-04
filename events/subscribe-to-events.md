@@ -8,6 +8,8 @@ icon: left-long-to-line
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endopenapi %}
 
+
+Note: The `event` field corresponds to the appropriate Event name defined in the [Events table](https://docs.kick.com/events/event-types#events)
 {% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/events/subscriptions" method="post" %}
 [https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
 {% endopenapi %}
