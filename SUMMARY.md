@@ -32,8 +32,8 @@
 
 ## Drops
 
-* [Drops Guide](drops/drops-guide.md)
-* [Drops FAQs](drops/drops-faqs.md)
+* [Guide](drops/drops-guide.md)
+* [FAQs](drops/drops-faqs.md)
 
 ## How do I contribute?
 
