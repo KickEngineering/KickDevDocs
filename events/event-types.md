@@ -1,25 +1,25 @@
 ---
-icon: font-case
 description: Request body payloads for Webhook API requests
+icon: brackets-curly
 ---
 
 # Webhook Payloads
 
 ## Events
 
-| Event | Name | Version | Description |
-|-------|------|---------|-------------|
-| [Chat Message](#chat-message) | `chat.message.sent` | 1 | Fired when a message has been sent in a stream's chat. |
-| [Channel Follow](#channel-follow) | `channel.followed` | 1 | Fired when a user follows a channel. |
-| [Channel Subscription Renewal](#channel-subscription-renewal) | `channel.subscription.renewal` | 1 | Fired when a user's subscription to a channel is renewed. |
-| [Channel Subscription Gifts](#channel-subscription-gifts) | `channel.subscription.gifts` | 1 | Fired when a user gifts subscriptions to a channel. |
-| [Channel Subscription Created](#channel-subscription-created) | `channel.subscription.new` | 1 | Fired when a user first subscribes to a channel. |
-| [Livestream Status Updated](#livestream-status-updated) | `livestream.status.updated` | 1 | Fired when a stream's status has been updated. For example, a stream could have started or ended |
-| [Livestream Metadata Updated](#livestream-metadata-updated) | `livestream.metadata.updated` | 1 | Fired when a stream's metadata has been updated. For example, a stream's title could have changed. |
-| [Moderation Banned](#moderation-banned) | `moderation.banned` | 1 | Fired when a user has been banned from a channel. |
-| [Kicks Gifted](#kicks-gifted) | `kicks.gifted` | 1 | Fired when a user gifts kicks to a channel. |
+| Event                                                                       | Name                           | Version | Description                                                                                        |
+| --------------------------------------------------------------------------- | ------------------------------ | ------- | -------------------------------------------------------------------------------------------------- |
+| [Chat Message](event-types.md#chat-message)                                 | `chat.message.sent`            | 1       | Fired when a message has been sent in a stream's chat.                                             |
+| [Channel Follow](event-types.md#channel-follow)                             | `channel.followed`             | 1       | Fired when a user follows a channel.                                                               |
+| [Channel Subscription Renewal](event-types.md#channel-subscription-renewal) | `channel.subscription.renewal` | 1       | Fired when a user's subscription to a channel is renewed.                                          |
+| [Channel Subscription Gifts](event-types.md#channel-subscription-gifts)     | `channel.subscription.gifts`   | 1       | Fired when a user gifts subscriptions to a channel.                                                |
+| [Channel Subscription Created](event-types.md#channel-subscription-created) | `channel.subscription.new`     | 1       | Fired when a user first subscribes to a channel.                                                   |
+| [Livestream Status Updated](event-types.md#livestream-status-updated)       | `livestream.status.updated`    | 1       | Fired when a stream's status has been updated. For example, a stream could have started or ended   |
+| [Livestream Metadata Updated](event-types.md#livestream-metadata-updated)   | `livestream.metadata.updated`  | 1       | Fired when a stream's metadata has been updated. For example, a stream's title could have changed. |
+| [Moderation Banned](event-types.md#moderation-banned)                       | `moderation.banned`            | 1       | Fired when a user has been banned from a channel.                                                  |
+| [Kicks Gifted](event-types.md#kicks-gifted)                                 | `kicks.gifted`                 | 1       | Fired when a user gifts kicks to a channel.                                                        |
 
-## Chat Message
+### Chat Message
 
 ```json
 Headers
@@ -96,7 +96,7 @@ Headers
 }
 ```
 
-## Channel Follow
+### Channel Follow
 
 ```json
 Headers
@@ -125,7 +125,7 @@ Headers
 }
 ```
 
-## Channel Subscription Renewal
+### Channel Subscription Renewal
 
 ```json
 Headers
@@ -157,7 +157,7 @@ Headers
 }
 ```
 
-## Channel Subscription Gifts
+### Channel Subscription Gifts
 
 ```json
 Headers
@@ -201,7 +201,7 @@ Public Gift Structure
 }
 ```
 
-## Channel Subscription Created
+### Channel Subscription Created
 
 ```json
 Headers
@@ -233,9 +233,10 @@ Headers
 }
 ```
 
-## Livestream Status Updated
+### Livestream Status Updated
 
-#### Livestream Status Updated - Stream started
+#### Stream started
+
 ```json
 Headers
 - Kick-Event-Type: "livestream.status.updated"
@@ -258,7 +259,8 @@ Headers
 }
 ```
 
-#### Livestream Status Updated - Stream ended
+#### Stream ended
+
 ```json
 Headers
 - Kick-Event-Type: "livestream.status.updated"
@@ -281,7 +283,7 @@ Headers
 }
 ```
 
-## Livestream Metadata Updated
+### Livestream Metadata Updated
 
 ```json
 Headers
@@ -311,7 +313,7 @@ Headers
 }
 ```
 
-## Moderation Banned
+### Moderation Banned
 
 ```json
 Headers
@@ -354,7 +356,7 @@ Headers
 }
 ```
 
-## Kicks Gifted
+### Kicks Gifted
 
 ```json
 Headers
