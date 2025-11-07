@@ -6,10 +6,10 @@ icon: icons
 
 Categories APIs allow you to use and interact with the categories that are available on the Kick website.
 
-{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/categories" method="get" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endopenapi %}
+{% openapi-operation spec="kick-dev-api" path="/categories" method="get" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/v1/doc.yaml)
+{% endopenapi-operation %}
 
-{% openapi src="https://api.kick.com/swagger/v1/doc.json" path="/categories/:category_id" method="get" %}
-[https://api.kick.com/swagger/v1/doc.json](https://api.kick.com/swagger/v1/doc.json)
-{% endopenapi %}
+{% openapi-operation spec="kick-dev-api" path="/categories/:category_id" method="get" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/v1/doc.yaml)
+{% endopenapi-operation %}
