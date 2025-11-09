@@ -16,6 +16,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 
 - [Kick.com Python Package](https://pypi.org/project/kickpython/)
 - [pyKickAPI - Python Package for Kick.com](https://github.com/Benjas333/pyKickAPI)
+- [kickcom.py - Python Async Client](https://github.com/PredaaA/kickcom.py)
 
 ### JS / Typescript
 
