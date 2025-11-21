@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                              |
 |------------|----------------------------------------------------------|
+| 21/11/2025 | Added custom_tags to GET /livestreams                    |
 | 21/11/2025 | Added custom_tags to GET /channels                       |
 | 27/10/2025 | Added GET /kicks/leaderboard endpoint                    |
 | 21/10/2025 | Added kicks.gifted webhook event                         |
