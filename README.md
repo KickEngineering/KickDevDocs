@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                              |
 |------------|----------------------------------------------------------|
+| 21/11/2025 | Added custom_tags to GET /channels                       |
 | 27/10/2025 | Added GET /kicks/leaderboard endpoint                    |
 | 21/10/2025 | Added kicks.gifted webhook event                         |
 | 20/08/2025 | Added replies_to field on chat message sent event        |
