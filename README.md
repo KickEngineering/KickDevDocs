@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                              |
 |------------|----------------------------------------------------------|
+| 25/11/2025 | Made refresh tokens reusable/flexible                    |
 | 25/11/2025 | Added tags and viewer_count to GET /categories/:id       |
 | 21/11/2025 | Added custom_tags to GET /livestreams                    |
 | 21/11/2025 | Added custom_tags to GET /channels                       |
