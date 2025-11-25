@@ -34,6 +34,7 @@ Explore community-built SDKs designed to simplify and enhance your interaction w
 ### Golang
 
 - [Go Client for Kick.com](https://github.com/Scorfly/gokick)
+- [Kick Go SDK](https://github.com/henrikah/kick-go-sdk)
 
 ## Documentation
 
