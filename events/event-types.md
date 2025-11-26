@@ -77,18 +77,19 @@ Headers
       ]
     }
   },
-  "content": "This is a test message with emotes!",
+  "content": "Hello [emote:4148074:HYPERCLAP] [emote:4148074:HYPERCLAP] [emote:37226:KEKW]",
   "emotes": [
     {
-      "emote_id": "12345",
+      "emote_id": "4148074",
       "positions": [
-        { "s": 0, "e": 7 }
+        { "s": 6, "e": 30 },
+        { "s": 32, "e": 56}
       ]
     },
     {
-      "emote_id": "67890",
+      "emote_id": "37226",
       "positions": [
-        { "s": 20, "e": 25 }
+        { "s": 58, "e": 75 }
       ]
     }
   ],
