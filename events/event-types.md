@@ -384,11 +384,12 @@ Headers
     "channel_slug": "gift_sender_channel"
   },
   "gift": {
-    "amount": 100,
-    "name": "Full Send",
-    "type": "BASIC",
-    "tier": "BASIC",
-    "message": "w"
+    "amount": 500,
+    "name": "Rage Quit",
+    "type": "LEVEL_UP",
+    "tier": "MID",
+    "message": "w",
+    "pinned_time_seconds": 600 // 10 minutes
   },
   "created_at": "2025-10-20T04:00:08.634Z"
 }
