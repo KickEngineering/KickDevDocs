@@ -9,3 +9,7 @@ Chat APIs allow you to use and interact with the chat that is available on the K
 {% openapi-operation spec="kick-dev-api" path="/chat" method="post" %}
 [OpenAPI kick-dev-api](https://api.kick.com/swagger/v1/doc.yaml)
 {% endopenapi-operation %}
+
+{% openapi-operation spec="kick-dev-api" path="/chat/:message_id" method="delete" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/v1/doc.yaml)
+{% endopenapi-operation %}
