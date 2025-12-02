@@ -52,6 +52,7 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 
 | Date       | Description                                                    |
 |------------|----------------------------------------------------------------|
+| 02/12/2025 | Added delete app functionality                                 |
 | 02/12/2025 | Added DELETE /chat/:message_id endpoint                        |
 | 27/11/2025 | Added pinned_time_seconds field to kicks.gifted event payload  |
 | 25/11/2025 | Made refresh tokens reusable/flexible                          |
