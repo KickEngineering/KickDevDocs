@@ -398,11 +398,9 @@ Headers
 
 The `status` field is limited to one of the following three `string` values:
 
-* `"pending"`                  <br>
-* \
-  `"accepted"`
-* \
-  `"rejected"`<br>
+* `"pending"`&#x20;
+* `"accepted"`&#x20;
+* `"rejected"`&#x20;
 
 ```json
 Headers
