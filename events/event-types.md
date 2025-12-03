@@ -238,6 +238,47 @@ Headers
 }
 ```
 
+### Channel Reward Redemption Updated
+
+The `status` field is limited to one of the following three `string` values:
+
+* `"pending"`&#x20;
+* `"accepted"`&#x20;
+* `"rejected"`&#x20;
+
+```json
+Headers
+- Kick-Event-Type: "channel.reward.redemption.updated"
+- Kick-Event-Version: “1”
+
+{
+  "id": "01KBHE78QE4HZY1617DK5FC7YD",
+  "user_input": "unban me",
+  "status": "rejected",
+  "redeemed_at": "2025-12-02T22:54:19.323Z",
+  "reward": {
+    "id": "01KBHE7RZNHB0SKDV1H86CD4F3",
+    "title": "Uban Request",
+    "cost": 1000,
+    "description": "Only good reasons pls"
+  },
+  "redeemer": {
+    "user_id": 123,
+    "username": "naughty-user",
+    "is_verified": false,
+    "profile_picture": "",
+    "channel_slug": "naughty_user"
+  },
+  "broadcaster": {
+    "user_id": 333,
+    "username": "gigachad",
+    "is_verified": true,
+    "profile_picture": "",
+    "channel_slug": "gigachad"
+  }
+}
+```
+
 ### Livestream Status Updated
 
 #### Stream started
@@ -393,44 +434,3 @@ Headers
   "created_at": "2025-10-20T04:00:08.634Z"
 }
 </code></pre>
-
-### Channel Reward Redemption Updated
-
-The `status` field is limited to one of the following three `string` values:
-
-* `"pending"`&#x20;
-* `"accepted"`&#x20;
-* `"rejected"`&#x20;
-
-```json
-Headers
-- Kick-Event-Type: "channel.reward.redemption.updated"
-- Kick-Event-Version: “1”
-
-{
-  "id": "01KBHE78QE4HZY1617DK5FC7YD",
-  "user_input": "unban me",
-  "status": "rejected",
-  "redeemed_at": "2025-12-02T22:54:19.323Z",
-  "reward": {
-    "id": "01KBHE7RZNHB0SKDV1H86CD4F3",
-    "title": "Uban Request",
-    "cost": 1000,
-    "description": "Only good reasons pls"
-  },
-  "redeemer": {
-    "user_id": 123,
-    "username": "naughty-user",
-    "is_verified": false,
-    "profile_picture": "",
-    "channel_slug": "naughty_user"
-  },
-  "broadcaster": {
-    "user_id": 333,
-    "username": "gigachad",
-    "is_verified": true,
-    "profile_picture": "",
-    "channel_slug": "gigachad"
-  }
-}
-```
