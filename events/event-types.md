@@ -396,6 +396,14 @@ Headers
 
 ### Channel Reward Redemption Updated
 
+The `status` field in the webhook payload is limited to one of the following 3 `string` values:
+
+* `"pending"`                  <br>
+* \
+  `"accepted"`
+* \
+  `"rejected"`<br>
+
 ```json
 Headers
 - Kick-Event-Type: "channel.reward.redemption.updated"
