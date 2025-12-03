@@ -396,7 +396,7 @@ Headers
 
 ### Channel Reward Redemption Updated
 
-The `status` field in the webhook payload is limited to one of the following 3 `string` values:
+The `status` field is limited to one of the following three `string` values:
 
 * `"pending"`                  <br>
 * \
