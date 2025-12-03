@@ -21,7 +21,7 @@ layout:
 
 ## Events
 
-<table data-full-width="true"><thead><tr><th width="316.08984375">Event</th><th width="327.64453125">Name</th><th width="99.72265625" data-type="number">Version</th><th>Description</th></tr></thead><tbody><tr><td><a href="event-types.md#chat-message">Chat Message</a></td><td><code>chat.message.sent</code></td><td>1</td><td>Fired when a message has been sent in a stream's chat.</td></tr><tr><td><a href="event-types.md#channel-follow">Channel Follow</a></td><td><code>channel.followed</code></td><td>1</td><td>Fired when a user follows a channel.</td></tr><tr><td><a href="event-types.md#channel-subscription-renewal">Channel Subscription Renewal</a></td><td><code>channel.subscription.renewal</code></td><td>1</td><td>Fired when a user's subscription to a channel is renewed.</td></tr><tr><td><a href="event-types.md#channel-subscription-gifts">Channel Subscription Gifts</a></td><td><code>channel.subscription.gifts</code></td><td>1</td><td>Fired when a user gifts subscriptions to a channel.</td></tr><tr><td><a href="event-types.md#channel-subscription-created">Channel Subscription Created</a></td><td><code>channel.subscription.new</code></td><td>1</td><td>Fired when a user first subscribes to a channel.</td></tr><tr><td><a href="event-types.md#livestream-status-updated">Livestream Status Updated</a></td><td><code>livestream.status.updated</code></td><td>1</td><td>Fired when a stream's status has been updated. For example, a stream could have started or ended</td></tr><tr><td><a href="event-types.md#livestream-metadata-updated">Livestream Metadata Updated</a></td><td><code>livestream.metadata.updated</code></td><td>1</td><td>Fired when a stream's metadata has been updated. For example, a stream's title could have changed.</td></tr><tr><td><a href="event-types.md#moderation-banned">Moderation Banned</a></td><td><code>moderation.banned</code></td><td>1</td><td>Fired when a user has been banned from a channel.</td></tr><tr><td><a href="event-types.md#kicks-gifted">Kicks Gifted</a></td><td><code>kicks.gifted</code></td><td>1</td><td>Fired when a user gifts kicks to a channel.</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="316.08984375">Event</th><th width="327.64453125">Name</th><th width="99.72265625" data-type="number">Version</th><th>Description</th></tr></thead><tbody><tr><td><a href="event-types.md#chat-message">Chat Message</a></td><td><code>chat.message.sent</code></td><td>1</td><td>Fired when a message has been sent in a stream's chat.</td></tr><tr><td><a href="event-types.md#channel-follow">Channel Follow</a></td><td><code>channel.followed</code></td><td>1</td><td>Fired when a user follows a channel.</td></tr><tr><td><a href="event-types.md#channel-subscription-renewal">Channel Subscription Renewal</a></td><td><code>channel.subscription.renewal</code></td><td>1</td><td>Fired when a user's subscription to a channel is renewed.</td></tr><tr><td><a href="event-types.md#channel-subscription-gifts">Channel Subscription Gifts</a></td><td><code>channel.subscription.gifts</code></td><td>1</td><td>Fired when a user gifts subscriptions to a channel.</td></tr><tr><td><a href="event-types.md#channel-subscription-created">Channel Subscription Created</a></td><td><code>channel.subscription.new</code></td><td>1</td><td>Fired when a user first subscribes to a channel.</td></tr><tr><td><a data-mention href="event-types.md#channel-reward-redemption-updated">#channel-reward-redemption-updated</a></td><td><code>channel.reward.redemption.updated</code></td><td>1</td><td>Fired when a channel reward is redeemed by a user.</td></tr><tr><td><a href="event-types.md#livestream-status-updated">Livestream Status Updated</a></td><td><code>livestream.status.updated</code></td><td>1</td><td>Fired when a stream's status has been updated. For example, a stream could have started or ended</td></tr><tr><td><a href="event-types.md#livestream-metadata-updated">Livestream Metadata Updated</a></td><td><code>livestream.metadata.updated</code></td><td>1</td><td>Fired when a stream's metadata has been updated. For example, a stream's title could have changed.</td></tr><tr><td><a href="event-types.md#moderation-banned">Moderation Banned</a></td><td><code>moderation.banned</code></td><td>1</td><td>Fired when a user has been banned from a channel.</td></tr><tr><td><a href="event-types.md#kicks-gifted">Kicks Gifted</a></td><td><code>kicks.gifted</code></td><td>1</td><td>Fired when a user gifts kicks to a channel.</td></tr></tbody></table>
 
 ### Chat Message
 
@@ -363,9 +363,8 @@ Headers
 
 ### Kicks Gifted
 
-```json
-Headers
-- Kick-Event-Type: "kicks.gifted"
+<pre class="language-json"><code class="lang-json"><strong>Headers
+</strong>- Kick-Event-Type: "kicks.gifted"
 - Kick-Event-Version: “1”
 
 {
@@ -392,5 +391,40 @@ Headers
     "pinned_time_seconds": 600 // 10 minutes
   },
   "created_at": "2025-10-20T04:00:08.634Z"
+}
+</code></pre>
+
+### Channel Reward Redemption Updated
+
+```json
+Headers
+- Kick-Event-Type: "channel.reward.redemption.updated"
+- Kick-Event-Version: “1”
+
+{
+  "id": "01KBHE78QE4HZY1617DK5FC7YD",
+  "user_input": "unban me",
+  "status": "rejected",
+  "redeemed_at": "2025-12-02T22:54:19.323Z",
+  "reward": {
+    "id": "01KBHE7RZNHB0SKDV1H86CD4F3",
+    "title": "Uban Request",
+    "cost": 1000,
+    "description": "Only good reasons pls"
+  },
+  "redeemer": {
+    "user_id": 123,
+    "username": "naughty-user",
+    "is_verified": false,
+    "profile_picture": "",
+    "channel_slug": "naughty_user"
+  },
+  "broadcaster": {
+    "user_id": 333,
+    "username": "gigachad",
+    "is_verified": true,
+    "profile_picture": "",
+    "channel_slug": "gigachad"
+  }
 }
 ```

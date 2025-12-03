@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Changelog](changelog.md)
 
 ## Getting Started
 
@@ -13,6 +14,7 @@
 * [Categories](apis/categories.md)
 * [Users](apis/users.md)
 * [Channels](apis/channels.md)
+* [Channel Rewards](apis/channel-rewards.md)
 * [Chat](apis/chat.md)
 * [Moderation](apis/moderation.md)
 * [Livestreams](apis/livestreams.md)
