@@ -20,6 +20,7 @@
 * [Livestreams](apis/livestreams.md)
 * [Public Key](apis/public-key.md)
 * [KICKs](apis/kicks.md)
+* [FAQs](apis/faqs.md)
 
 ## Events
 
