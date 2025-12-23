@@ -163,7 +163,7 @@ Rewards vary by game and can include cosmetic items, in-game currency, exclusive
 
 <summary>My progress isn't tracking properly. What should I do?</summary>
 
-Progress is tracked every 5 minutes, so avoid changing tabs or refreshing the page frequently. If issues persist, reach out to support@kick.com.
+Progress is tracked every 2 minutes, so avoid changing tabs or refreshing the page frequently. If issues persist, reach out to support@kick.com.
 
 </details>
 
