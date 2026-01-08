@@ -361,6 +361,12 @@ Content-Type: application/x-www-form-urlencoded
 OK
 ```
 
+## Token introspect Endpoint
+
+<mark style="color:green;">`POST`</mark> `/oauth/token/introspect`
+
+Checks if an access token is valid and returns information about it.
+
 ## Notes
 
 #### Workaround for 127.0.0.1 Host Redirect URI
