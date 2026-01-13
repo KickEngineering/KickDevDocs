@@ -8,14 +8,14 @@ App Access Tokens and User Access Tokens can access this.
 
 ## Headers
 
-| Header                         | Type                 | Short Description                       |
-|--------------------------------|----------------------|-----------------------------------------|
-| `Kick-Event-Message-Id`        | ULID                 | Unique message ID, idempotent key       |
-| `Kick-Event-Subscription-Id`   | ULID                 | Subscription ID associated with event   |
-| `Kick-Event-Signature`         | Base64 Encode String | Signature to verify the sender          |
-| `Kick-Event-Message-Timestamp` | RFC3339 Date-time    | Timestamp of when the message was sent  |
-| `Kick-Event-Type`              | string               | e.g. `chat.message.sent`                |
-| `Kick-Event-Version`           | string               | e.g. `1`                                |
+| Header                         | Type                 | Short Description                      |
+| ------------------------------ | -------------------- | -------------------------------------- |
+| `Kick-Event-Message-Id`        | ULID                 | Unique message ID, idempotent key      |
+| `Kick-Event-Subscription-Id`   | ULID                 | Subscription ID associated with event  |
+| `Kick-Event-Signature`         | Base64 Encode String | Signature to verify the sender         |
+| `Kick-Event-Message-Timestamp` | RFC3339 Date-time    | Timestamp of when the message was sent |
+| `Kick-Event-Type`              | string               | e.g. `chat.message.sent`               |
+| `Kick-Event-Version`           | string               | e.g. `1`                               |
 
 ## Webhook Sender Validation
 
@@ -38,9 +38,11 @@ twIDAQAB
 ```
 
 The public key can also be fetched from this endpoint.
+
 ```
 https://api.kick.com/public/v1/public-key
 ```
+
 [Public Key](../apis/public-key.md)
 
 ### Signature Creation
@@ -139,12 +141,8 @@ err := Verify(pubkey, signature, headers["Kick-Event-Signature"])
 
 ```
 
-## Retrying Sending of Events
-
-Kick will attempt to send a webhook 3 times over a period of time until a 200 response is made by the server.
-
 ## Disabling of Webhooks
 
-After a certain threshold of errors are received from an app's webhook endpoint, Kick may automatically unsubscribe the app from receiving webhooks.
+If an app's webhook continually fails to process an event for over a day, Kick automatically unsubscribes the app from that event.
 
-The app will then need to resubscribe to webhooks.
+The app will then need to resubscribe to that particular event.
