@@ -1,6 +1,6 @@
 ---
-icon: unlock-keyhole
 description: The Kick OAuth Flow.
+icon: unlock-keyhole
 ---
 
 # OAuth 2.1
@@ -37,15 +37,15 @@ Directs the user to the authorization server where they can log in and approve t
 
 **Query Parameters**
 
-| Name                    | Required            | Type   | Description                                                        |
-| ----------------------- | ------------------- | ------ | ------------------------------------------------------------------ |
-| `client_id`             | Yes                 | string | Your application's client ID                                       |
-| `response_type`         | Yes                 | string | `code`                                                             |
-| `redirect_uri`          | Yes                 | uri    | The URI to redirect users to after authorization                   |
-| `state`                 | Yes (at the moment) | string | A random string to maintain state between the request and callback |
-| `scope`                 | Yes                 | string | Scopes for request                                                 |
-| `code_challenge`        | Yes                 | string | OAuth code challenge                                               |
-| `code_challenge_method` | Yes                 | string | `S256`                                                             |
+| Name                    | Required            | Type   | Description                                                                                                                                                                                  |
+| ----------------------- | ------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`             | Yes                 | string | Your application's client ID                                                                                                                                                                 |
+| `response_type`         | Yes                 | string | `code`                                                                                                                                                                                       |
+| `redirect_uri`          | Yes                 | uri    | The URI to redirect users to after authorization. If your redirect URI host is 127.0.0.1, see this [workaround](generating-tokens-oauth2-flow.md#workaround-for-127.0.0.1-host-redirect-uri) |
+| `state`                 | Yes (at the moment) | string | A random string to maintain state between the request and callback                                                                                                                           |
+| `scope`                 | Yes                 | string | Scopes for request                                                                                                                                                                           |
+| `code_challenge`        | Yes                 | string | OAuth code challenge                                                                                                                                                                         |
+| `code_challenge_method` | Yes                 | string | `S256`                                                                                                                                                                                       |
 
 **Response**
 
@@ -94,9 +94,10 @@ https://yourapp.com/callback?code=<code>&state=random-state
 Exchanges the code for a valid access token and a refresh token that can be used to make authorised requests to Kick's API.
 
 **Headers**
-| Name          | Required | Type    | Value                             |
-| ------------- | -------- | ------- | --------------------------------- |
-| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
+| Name         | Required | Type   | Value                             |
+| ------------ | -------- | ------ | --------------------------------- |
+| Content-Type | true     | string | application/x-www-form-urlencoded |
 
 **Body**
 
@@ -135,7 +136,8 @@ Exchanges the code for a valid access token and a refresh token that can be used
 
 #### Example Request
 
-<pre><code>POST
+```
+POST
 https://id.kick.com/oauth/token
 
 Headers: 
@@ -144,13 +146,13 @@ Content-Type: application/x-www-form-urlencoded
 Body:
 {
     grant_type=authorization_code
-    client_id=&#x3C;client_id>
-    client_secret=&#x3C;client_secret>
-    redirect_uri=&#x3C;redirect_uri>
-    code_verifier=&#x3C;code_verifier>
-    code=&#x3C;CODE>
+    client_id=<client_id>
+    client_secret=<client_secret>
+    redirect_uri=<redirect_uri>
+    code_verifier=<code_verifier>
+    code=<CODE>
 }
-</code></pre>
+```
 
 #### Example Response
 
@@ -168,20 +170,21 @@ Body:
 
 <mark style="color:green;">`POST`</mark> `/oauth/token`
 
-Uses a client_id and client_secret to generate an app access token which can be used to obtain public data on Kick.
+Uses a client\_id and client\_secret to generate an app access token which can be used to obtain public data on Kick.
 
 **Headers**
-| Name          | Required | Type    | Value                             |
-| ------------- | -------- | ------- | --------------------------------- |
-| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
+| Name         | Required | Type   | Value                             |
+| ------------ | -------- | ------ | --------------------------------- |
+| Content-Type | true     | string | application/x-www-form-urlencoded |
 
 **Body**
 
-| Name            | Required | Type   | Description                                      |
-| --------------- | -------- | ------ | ------------------------------------------------ |
-| `client_id`     | Yes      | string | Your application's client ID                     |
-| `client_secret` | Yes      | string | Your application's client secret                 |
-| `grant_type`    | Yes      | string | `client_credentials`                             |
+| Name            | Required | Type   | Description                      |
+| --------------- | -------- | ------ | -------------------------------- |
+| `client_id`     | Yes      | string | Your application's client ID     |
+| `client_secret` | Yes      | string | Your application's client secret |
+| `grant_type`    | Yes      | string | `client_credentials`             |
 
 **Response**
 
@@ -207,7 +210,8 @@ Uses a client_id and client_secret to generate an app access token which can be 
 
 #### Example Request
 
-<pre><code>POST
+```
+POST
 https://id.kick.com/oauth/token
 
 Headers:
@@ -216,10 +220,10 @@ Content-Type: application/x-www-form-urlencoded
 Body:
 {
     grant_type=client_credentials
-    client_id=&#x3C;client_id>
-    client_secret=&#x3C;client_secret>
+    client_id=<client_id>
+    client_secret=<client_secret>
 }
-</code></pre>
+```
 
 #### Example Response
 
@@ -238,9 +242,10 @@ Body:
 Pass in refresh token and refresh both access and refresh codes.
 
 **Headers**
-| Name          | Required | Type    | Value                             |
-| ------------- | -------- | ------- | --------------------------------- |
-| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
+| Name         | Required | Type   | Value                             |
+| ------------ | -------- | ------ | --------------------------------- |
+| Content-Type | true     | string | application/x-www-form-urlencoded |
 
 **Body**
 
@@ -312,14 +317,15 @@ Body:
 Pass in a token to revoke access to that token.
 
 **Headers**
-| Name          | Required | Type    | Value                             |
-| ------------- | -------- | ------- | --------------------------------- |
-| Content-Type  | true     | string  | application/x-www-form-urlencoded |
+
+| Name         | Required | Type   | Value                             |
+| ------------ | -------- | ------ | --------------------------------- |
+| Content-Type | true     | string | application/x-www-form-urlencoded |
 
 **Query**
 
 | Name              | Required | Type   | Description                       |
-|-------------------|----------|--------|-----------------------------------|
+| ----------------- | -------- | ------ | --------------------------------- |
 | `token`           | Yes      | string | The token to be revoked           |
 | `token_hint_type` | No       | string | `access_token` or `refresh_token` |
 
@@ -353,4 +359,33 @@ Content-Type: application/x-www-form-urlencoded
 
 ```
 OK
+```
+
+## Token introspect Endpoint
+
+<mark style="color:green;">`POST`</mark> `/oauth/token/introspect`
+
+Checks if an access token is valid and returns information about it.
+
+## Notes
+
+#### Workaround for 127.0.0.1 Host Redirect URI
+
+If developing your authorization to only happen on an app running locally, we recommend using `localhost` as your redirect URI/callback URL e.g. `http://localhost/auth/callback`. But if you're unable to change your callback URL to use `localhost`  instead of `127.0.0.1`, you will need to perform a workaround due to a [bug in our frontend framework, NextJS](https://github.com/vercel/next.js/issues/79182).
+
+NextJS will change the first occurrence of `127.0.0.1` in a URL to `localhost`, and as the redirect URI needs to match exactly to your callback URL specified in your app settings, this will cause authorization to fail.
+
+When performing the Authorize GET request, you will need to add a sacrificial query parameter that sits before the `redirect_uri` parameter that contains "127.0.0.1". This parameter can be named anything but from testing it's best to call it `redirect`.  This will cause NextJS to change that first parameter and leave the second parameter untouched. See an example request below:
+
+```
+GET
+https://id.kick.com/oauth/authorize?
+    response_type=code&
+    client_id=<your_client_id>&
+    redirect=127.0.0.1
+    redirect_uri=<http://127.0.0.1/callback>&
+    scope=<scopes>&
+    code_challenge=<code_challenge>&
+    code_challenge_method=S256&
+    state=<random_value>
 ```
