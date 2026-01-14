@@ -22,3 +22,15 @@ icon: treasure-chest
 {% openapi-operation spec="kick-dev-api" path="/public/v1/channels/rewards/{id}" method="delete" %}
 [OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
 {% endopenapi-operation %}
+
+{% openapi-operation spec="kick-dev-api" path="/public/v1/channels/rewards/redemptions" method="get" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
+{% endopenapi-operation %}
+
+{% openapi-operation spec="kick-dev-api" path="/public/v1/channels/rewards/redemptions/accept" method="post" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
+{% endopenapi-operation %}
+
+{% openapi-operation spec="kick-dev-api" path="/public/v1/channels/rewards/redemptions/reject" method="post" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
+{% endopenapi-operation %}
