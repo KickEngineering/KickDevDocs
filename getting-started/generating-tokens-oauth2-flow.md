@@ -361,7 +361,7 @@ Content-Type: application/x-www-form-urlencoded
 OK
 ```
 
-## Token introspect Endpoint
+## Token Introspect Endpoint
 
 <mark style="color:green;">`POST`</mark> `/oauth/token/introspect`
 
