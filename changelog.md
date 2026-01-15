@@ -4,7 +4,7 @@ icon: ballot
 
 # Changelog
 
-## 15/01/2025
+## 15/01/2026
 
 * Added new [Categories V2 endpoint](apis/categories.md#get-public-v2-categories) which includes improvements like more explicit filters and pagination.
   * As a result, the V1 endpoints for Categories are now deprecated and will be removed in due time.
