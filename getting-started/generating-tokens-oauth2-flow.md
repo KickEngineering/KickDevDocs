@@ -367,6 +367,37 @@ OK
 
 Checks if an access token is valid and returns information about it.
 
+**Headers**
+
+| Name          | Required | Type   | Value                  |
+| ------------- | -------- | ------ | ---------------------- |
+| Authorization | true     | string | Bearer \<access token> |
+
+#### Example Request
+
+```
+POST
+https://id.kick.com/oauth/token/introspect
+
+Headers: 
+Authorization: Bearer <access token>
+```
+
+#### Example Response
+
+```json
+{
+    "data": {
+        "active": true,
+        "client_id": "",
+        "token_type": "user", // "app" or "user"
+        "scope": "user:read channel:read",
+        "exp": 1771046347
+    },
+    "message": "OK"
+}
+```
+
 ## Notes
 
 #### Workaround for 127.0.0.1 Host Redirect URI
