@@ -103,6 +103,7 @@ GET /public/v1/drops/claims?claim_id=01JAXK8N4QWRTY5PM7ZEBVGH2S
         "campaign_id": "string",
         "reward_id": "string",
         "external_id": "string",
+        "external_status": "string", // omitted when not set or null
         "created_at": "datetime",
         "updated_at": "datetime"
       }
