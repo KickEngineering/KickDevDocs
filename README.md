@@ -73,3 +73,4 @@ Check out our Public Roadmap [here](https://github.com/orgs/KickEngineering/proj
 | 07/04/2025 | Added expires_at to channel subscriptions payload              |
 | 07/04/2025 | Added identity object to chat sender payload                   |
 | 01/04/2025 | Added livestreams endpoint                                     |
+| 22/05/2026 | Add external_status field in GET claims response               |
