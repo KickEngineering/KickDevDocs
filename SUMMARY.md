@@ -37,6 +37,7 @@
 
 * [Guide](drops/drops-guide.md)
 * [FAQs](drops/drops-faqs.md)
+* [Public API](drops/public-api.md)
 
 ## How do I contribute?
 
