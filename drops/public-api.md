@@ -1,3 +1,7 @@
+---
+icon: rectangle-api
+---
+
 # Public API
 
 Organizations can retrieve and update reward claims for their Drops campaigns using the Public API. Only OAuth apps associated with an organization can access these endpoints.
