@@ -57,7 +57,7 @@ GET /public/v1/drops/claims?claim_id=01JAXK8N4QWRTY5PM7ZEBVGH2S
 }
 ```
 
-The `external_status` field is omitted when not set or null.
+The `external_status` field is set to `initiated` when a claim is created.
 
 #### Error Responses
 
@@ -117,7 +117,7 @@ PATCH /public/v1/drops/claims
     },
     {
       "claim_id": "01KAAFHJ2PNXS48NG8XXPGWKCA",
-      "external_status": "acknowledged"
+      "external_status": "initiated"
     }
   ]
 }
