@@ -6,8 +6,8 @@ icon: ballot
 
 ## 23/06/2026
 
-* Added pagination supported [#get-public-v2-livestreams](apis/livestreams.md#get-public-v2-livestreams "mention").
-* [#get-public-v1-livestreams](apis/livestreams.md#get-public-v1-livestreams "mention") is now deprecated.
+* Added pagination supported [Livestreams V2 endpoint](apis/livestreams.md#get-public-v2-livestreams).
+* The [Livestreams V1 endpoint](apis/livestreams.md#get-public-v1-livestreams) is now deprecated.
 
 ## 15/01/2026
 
