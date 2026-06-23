@@ -4,6 +4,11 @@ icon: ballot
 
 # Changelog
 
+## 23/06/2026
+
+* Added pagination supported [#get-public-v2-livestreams](apis/livestreams.md#get-public-v2-livestreams "mention").
+* [#get-public-v1-livestreams](apis/livestreams.md#get-public-v1-livestreams "mention") is now deprecated.
+
 ## 15/01/2026
 
 * Added new [Categories V2 endpoint](apis/categories.md#get-public-v2-categories) which includes improvements like more explicit filters and pagination.
