@@ -59,3 +59,15 @@ To do so:
 After following the above steps, you should be able to send requests by clicking the "Send" button on the top of the modal.
 
 </details>
+
+<details>
+
+<summary>Can I use the <code>kick.com/api/v2</code> internal endpoints in production?</summary>
+
+No. Endpoints such as `https://kick.com/api/v2/channels/{username}` are **internal endpoints** that power the Kick website. They are **not part of the Public API**, are **not intended for third-party use**, and may **change or break without notice**.
+
+For production integrations, only rely on the documented Public API endpoints listed on this site (hosted at `https://api.kick.com`). These are versioned and supported.
+
+If a documented endpoint is missing a field you need, or you need a brand new endpoint, please raise an **Endpoint request** or **Feature request** via [GitHub Issues](https://github.com/KickEngineering/KickDevDocs/issues) so it can be considered for the Public API.
+
+</details>
