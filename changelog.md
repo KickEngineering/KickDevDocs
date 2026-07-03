@@ -4,6 +4,10 @@ icon: ballot
 
 # Changelog
 
+## 03/07/2026
+
+* Added endpoint to get [Livestreams by user IDs](https://docs.kick.com/apis/livestreams#get-public-v1-users-livestreams). Livestreams V1 should now be completely migrated off.
+
 ## 23/06/2026
 
 * Added pagination supported [Livestreams V2 endpoint](apis/livestreams.md#get-public-v2-livestreams).
