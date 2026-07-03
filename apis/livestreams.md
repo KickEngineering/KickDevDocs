@@ -14,6 +14,10 @@ Livestreams APIs allow an app to interact with livestreams in the Kick website. 
 [OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
 {% endopenapi-operation %}
 
+{% openapi-operation spec="kick-dev-api" path="/public/v1/users/livestreams" method="get" %}
+[OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
+{% endopenapi-operation %}
+
 {% openapi-operation spec="kick-dev-api" path="/public/v1/livestreams/stats" method="get" %}
 [OpenAPI kick-dev-api](https://api.kick.com/swagger/doc.yaml)
 {% endopenapi-operation %}
