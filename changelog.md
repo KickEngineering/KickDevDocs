@@ -4,6 +4,11 @@ icon: ballot
 
 # Changelog
 
+## 11/08/2026
+
+* The `active_subscribers_count` field on the [Get Channels endpoint](https://docs.kick.com/apis/channels#get-public-v1-channels) now includes active gifted subscriptions, matching the subscriber count shown on Kick. Previously only paid subscriptions were counted.
+* Added a new `active_gifted_subscribers_count` field to the same endpoint so apps can differentiate gifted subscriptions from paid ones.
+
 ## 03/07/2026
 
 * Added endpoint to get [Livestreams by user IDs](https://docs.kick.com/apis/livestreams#get-public-v1-users-livestreams). Livestreams V1 should now be completely migrated off.
