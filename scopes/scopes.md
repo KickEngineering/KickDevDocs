@@ -21,3 +21,5 @@ These scopes are for apps using OAuth 2.1 authorization code grants for authoriz
 | `moderation:ban`                 | Execute ban/unban actions on users                                                 |
 | `moderation:chat_message:manage` | Execute moderation actions on chat messages                                        |
 | `kicks:read`                     | View KICKs related information in Kick e.g leaderboards, etc.                      |
+| `ads:read`                       | Read ads related information on a channel                                          |
+| `ads:write`                      | Read, add ads on a channel                                                         |
