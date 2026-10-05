@@ -23,21 +23,9 @@ App Access Tokens and User Access Tokens can access this.
 
 ### Kick Public Key
 
-This is the Kick public key. Any request that is sent from our servers will have a signature signed by our Private Key, which can be decrypted using this Public Key.
+Any request that is sent from our servers will have a signature signed by our Private Key, which can be verified using the Public Key.
 
-```
------BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq/+l1WnlRrGSolDMA+A8
-6rAhMbQGmQ2SapVcGM3zq8ANXjnhDWocMqfWcTd95btDydITa10kDvHzw9WQOqp2
-MZI7ZyrfzJuz5nhTPCiJwTwnEtWft7nV14BYRDHvlfqPUaZ+1KR4OCaO/wWIk/rQ
-L/TjY0M70gse8rlBkbo2a8rKhu69RQTRsoaf4DVhDPEeSeI5jVrRDGAMGL3cGuyY
-6CLKGdjVEM78g3JfYOvDU/RvfqD7L89TZ3iN94jrmWdGz34JNlEI5hqK8dd7C5EF
-BEbZ5jgB8s8ReQV8H+MkuffjdAj3ajDDX3DOJMIut1lBrUVD1AaSrGCKHooWoL2e
-twIDAQAB
------END PUBLIC KEY-----
-```
-
-The public key can also be fetched from this endpoint.
+Fetch the public key from the hosted endpoint. Do not hardcode it. The key can be rotated at any time, and a hardcoded copy will fail verification after a rotation.
 
 ```
 https://api.kick.com/public/v1/public-key
@@ -102,6 +90,8 @@ import (
 	"crypto/rsa"
 	"crypto/sha256"
 	"encoding/base64"
+	"io"
+	"net/http"
 )
 
 func Verify(publicKey *rsa.PublicKey, body []byte, signature []byte) error {
@@ -120,18 +110,19 @@ func Verify(publicKey *rsa.PublicKey, body []byte, signature []byte) error {
    return rsa.VerifyPKCS1v15(publicKey, crypto.SHA256, hashed[:], signature)
 }
 
-// Parse the Public Key
-pubkey, err := keysx.ParsePublicKey([]byte(`
------BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq/+l1WnlRrGSolDMA+A8
-6rAhMbQGmQ2SapVcGM3zq8ANXjnhDWocMqfWcTd95btDydITa10kDvHzw9WQOqp2
-MZI7ZyrfzJuz5nhTPCiJwTwnEtWft7nV14BYRDHvlfqPUaZ+1KR4OCaO/wWIk/rQ
-L/TjY0M70gse8rlBkbo2a8rKhu69RQTRsoaf4DVhDPEeSeI5jVrRDGAMGL3cGuyY
-6CLKGdjVEM78g3JfYOvDU/RvfqD7L89TZ3iN94jrmWdGz34JNlEI5hqK8dd7C5EF
-BEbZ5jgB8s8ReQV8H+MkuffjdAj3ajDDX3DOJMIut1lBrUVD1AaSrGCKHooWoL2e
-twIDAQAB
------END PUBLIC KEY-----
-`))
+// Fetch the current public key. Do not hardcode it: Kick may rotate it at any time.
+resp, err := http.Get("https://api.kick.com/public/v1/public-key")
+if err != nil {
+    return err
+}
+defer resp.Body.Close()
+
+pemBytes, err := io.ReadAll(resp.Body)
+if err != nil {
+    return err
+}
+
+pubkey, err := ParsePublicKey(pemBytes)
 
 // Create the Signature to compare
 signature := []byte(fmt.Sprintf("%s.%s.%s", messageID, timestamp, body))
