@@ -194,7 +194,7 @@ Uses a client\_id and client\_secret to generate an app access token which can b
 {
   "access_token": "",
   "token_type": "",
-  "expires_in": "",
+  "expires_in": ""
 }
 ```
 {% endtab %}
@@ -231,7 +231,7 @@ Body:
 {
   "access_token": "",
   "expires_in": "",
-  "token_type": "",
+  "token_type": ""
 }
 ```
 
@@ -413,7 +413,7 @@ GET
 https://id.kick.com/oauth/authorize?
     response_type=code&
     client_id=<your_client_id>&
-    redirect=127.0.0.1
+    redirect=127.0.0.1&
     redirect_uri=<http://127.0.0.1/callback>&
     scope=<scopes>&
     code_challenge=<code_challenge>&
